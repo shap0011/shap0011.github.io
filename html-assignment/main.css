@@ -38,8 +38,8 @@ nav ul {
 /* Add a background and border to the links */
 a {
     text-decoration: none;
-    background-color: beige;
-    border: 1px solid blue;
+    background-color: rgb(169, 247, 136);
+    border: 2px solid blue;
 }
 
 /* Change the background colour on hover or focus state of the links */
