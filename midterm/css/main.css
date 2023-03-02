@@ -1,0 +1,237 @@
+/* add the style to the body: set webpage background color to #aad4cf,
+reset the margin on top to zero, at the bottom to 15px,
+set font family which is close to mockup for all the webpage,
+set font-size value 1.8em which is close to mockup's headings,
+set font-weight value as bold*/
+body {
+    background-color: #aad4cf;
+    margin: 0px 0px 15px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* use position value 'relative' for all tags 
+for adjusting positioning of webpage elements*/
+* {
+    position: relative;
+}
+
+/* style the block wrapper which containes the page elements. 
+The width of the block is equal to the image width */
+.wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d4e9e7;
+    width: 1024px;
+}
+
+/* start styling of the header elements*/
+
+/* style h1 heading, align in the centre horizontaly 
+and position it over the image,
+set the top edge of the positioned <h1> element 190px up 
+to the top edge of its nearest positioned ancestor */
+h1 {
+    color: white;
+    top: -190px;
+    text-align: center;
+}
+
+/* style the navigation bar: center the list's items horizontally, 
+place them in three colomns 
+divided by black solid rules with 1px thikness,
+set the top edge of the positioned <ul> element 147px up 
+to the top edge of its nearest positioned ancestor */
+nav ul {
+    padding: 0;
+    top: -147px;
+    text-align: center;
+    column-count: 3;
+    column-rule: 1px solid black;
+    list-style-type: none;
+}
+
+/* style the links: no bullets, uppercase letters, 
+font-weight is normal color black, the vertical positioning
+is 4px lower than the top of the rules (set the top edge the <a> element 4px down 
+from the top edge of its nearest positioned ancestor),
+the font size is .8em */
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+    top: 4px;
+    font-size: .8em;
+}
+
+/* end styling of the header elements*/
+
+/* start styling of the main elements*/
+
+/* style the main block with left and right margins equal to 10px,
+with the proper height values to adjust the content 
+positioning vertically to get the overall design as close to
+the provided mockup as possible,
+set the top edge of the positioned <main> block 135px up 
+to the top edge of its nearest positioned ancestor */
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+    top: -135px;
+    height: 980px;
+}
+
+/* start to style the article block elements */
+
+/* styling the article paragraph with font-size value equal to .58em,
+set the top edge of the positioned <p> element 65px up 
+to the top edge of its nearest positioned ancestor */
+article p {
+    font-size: .58em;
+    top: -20px;
+}
+
+/* styling the article image: increase the size of the image 
+to 26% if the width, float the image left,
+right and bottom margins are equal to 20px */
+article p img {
+    width: 26%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* end of the styling of the artucle block */
+
+/* start styling of the section class="facts" */
+
+/* style the section .facts with setting the top edge of
+the positioned <section class="facts"> element 30px up 
+to the top edge of its nearest positioned ancestor */
+.facts {
+    top: -30px;
+}
+
+/* style the section's unordered list with with setting 
+the top edge of the positioned  <ul> element 25px up 
+to the top edge of its nearest positioned ancestor,
+move 20px left, set font-size value as .58em */
+.facts ul {
+    top: -25px;
+    margin-left: -20px;
+    font-size: .58em;
+}
+
+/* end of the styling of the class="facts" section */
+
+/* start styling the class="form" section */
+/* set the top edge of the positioned .form <section> element 65px up 
+to the top edge of its nearest positioned ancestor */
+.form {
+    top: -65px;
+}
+
+/* start styling the form block's elements */
+
+/* styling the form block with font-size set to .58em,
+border's properties: 1px width, border style is solid,
+and border-color is black,
+set the paddings' values to padding-top is 25px, 
+padding-bottom is 0px, padding-left and padding-right to 20px,
+set the top edge of the positioned <form> block elements 30px up 
+to the top edge of its nearest positioned ancestor */
+form {
+    font-size: .58em;
+    border: 1px solid black;
+    padding: 25px 20px 0px 20px;
+    top: -30px;
+}
+
+/* styling inputs with 0px border-width,
+.58em padding-top and padding-bottom,
+1em padding-left and padding-right,
+set the margin-bottom to 20px,
+set the width of the input fields to 100%,
+set the 'box-sizing' property to CSS 'border-box' value
+to guarantee that the element size includes borders and padding */
+input[name="fullname"],
+input[name="email"],
+textarea[name="message"] {
+    border-width: 0px;
+    padding: .58em 1em;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* additional styling of the textarea:
+reset the border width to 1px,
+height to 100px,
+set 'resize' to CSS 'none' */
+textarea[name="message"] {
+    border-width: 1px;
+    height: 100px;
+    resize: none;
+}
+
+/* style the paragraph element of the form block
+with setting the font-size to 1.2em value,
+set the top edge of the positioned <p> element 30px up 
+to the top edge of its nearest positioned ancestor */
+form p {
+    font-size: 1.2em;
+    top: -30px;
+}
+
+/* style the <span> element of the form block
+with setting the top edge of the positioned <p> element 30px up 
+to the top edge of its nearest positioned ancestor */
+span {
+    top: -30px;
+}
+
+/* style input 'submit':
+set 'display' property to 'block' value to position the button 
+below the radiobuttons set,
+set text on the button ('text-transform' property) to uppercase value,
+set font-size to .7em and font-weight to bold values,
+set all paddings to 10px,
+set 'background-color' property to 'inherit',
+set 'border-width' to 1px, 'margin-top' to 13px, and margin-bottom to -8px
+to get the overall design as close to provided mockup as possible */
+input[type="submit"] {
+    display: block;
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: inherit;
+    border-width: 1px;
+    margin-top: 13px;
+    margin-bottom: -8px;
+}
+
+/* end styling the form block's elements */
+
+/* end styling the class="form" section */
+
+/* end the main styling */
+
+/* start the footer styling */
+
+/* styling the footer paragraph element: 
+align the copyright right, define the font-size property to .58em,
+reset margins top, bottom, and left to zero and margin-right to 40px,
+set the top edge of the positioned <p> element 40px up 
+to the top edge of its nearest positioned ancestor */
+footer p {
+    font-size: .58em;
+    text-align: right;
+    margin: 0px 40px 0px 0px;
+    top: -40px;
+}
+
+/* end the footer styling */

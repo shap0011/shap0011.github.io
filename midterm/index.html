@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Durham Olga midterm</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+    <!-- create a block with class 'wrapper' -->
+    <div class="wrapper">
+        <!-- add a header -->
+        <header>
+            <!-- use the image tag to add the image and position the site title on top of it -->
+            <img src="images/lone-starfish-wide.jpg" alt="Lone Starfish Wide" title="Lone Starfish Wide" width="1024"
+                height="341">
+            <!-- add heading h1 -->
+            <h1>Lone Starfish</h1>
+            <!-- add a navigation bar with a list of three links "Home", "Story", "Contacts" -->
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">story</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- create a main with content in it -->
+        <main>
+            <!-- add an article -->
+            <article>
+                <!-- add a heading h3 -->
+                <h3>Life of a Starfish</h3>
+                <!-- add a paragraph with an image in it -->
+                <!-- Image should have the text wrapping around it -->
+                <p><img class="starfish" src="images/lone-starfish.jpg" alt="Lone Starfish"
+                        title="Lone Starfish">Swallower catla Black angelfish grunter striped bass scissor-tail rasbora;
+                    slender mola. Snapper
+                    catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
+                    batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike
+                    barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose
+                    chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch
+                    snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish
+                    bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River
+                    sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise
+                    fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver:
+                    ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead
+                    catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn
+                    fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby
+                    whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray.
+                    Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray
+                    lightfish Australian lungfish searobin false trevally, dottyback.</p>
+            </article>
+            <!-- add a section with class "facts" -->
+            <section class="facts">
+                <!-- add a heading h4 -->
+                <h4>Facts About Starfish</h4>
+                <!-- add an unordered list with four facts using proper syntax for listing the facts -->
+                <ul>
+                    <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                    <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                </ul>
+            </section>
+            <!-- add a section with class "form" -->
+            <section class="form">
+                <!-- add a heading h4 -->
+                <h4>Contact to learn more</h4>
+                <!-- create a form with method "post" -->
+                <form action="#" method="post">
+                    <!-- add labels and inputs (text fields and text area), all the inputs must be linked to the relative labels -->
+                    <label for="fullname">Your Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <!-- add a paragraph -->
+                    <p>Would you like to visit the starfish?</p>
+                    <!-- use span for a set of radiobuttons -->
+                    <span>
+                        <!-- add labels and inputs (radiobuttons), all the inputs must be linked to the relative labels -->
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="radio" value="yes">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="radio" value="no">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="radio" value="maybe">
+                        <input type="submit" value="send">
+                    </span>
+                </form>
+            </section>
+            <!-- end section with class "copyright" -->
+        </main>
+        <!-- add a footer -->
+        <footer>
+            <!-- add a paragraph -->
+            <p>&copy; Lone Starfish</p>
+        </footer>
+    </div>
 </body>
+
 </html>
