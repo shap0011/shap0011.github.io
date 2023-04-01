@@ -1,1 +1,71 @@
 /* css code */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.yellowbox {
+    background-color: #c68d00;
+    padding: 5.3em;
+}
+
+.navitem a {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style-type: none;
+    color: #c68d00;
+}
+
+.one a{
+    color: #222222;
+}
+
+.navitem {
+    padding: 1em;
+}
+
+header {
+    position: relative;
+    background-color: #222222;
+    width: auto;
+    height: 27.7em;
+    padding: .7em;
+}
+
+header .navbar {
+    position: absolute;
+    bottom: 3.75em;
+    left: 0;
+    right: 0;
+}
+
+header #search {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 2.325em;
+    margin: 0 .7em .7em .7em;
+    padding: .45em .25em;
+}
+
+header .fa-magnifying-glass {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #c68d00;
+    padding: .27em;
+    font-size: 1.4em;
+    border: 1px solid #c68d00;
+    margin-right: .7rem;
+    margin-bottom: .7rem;
+}
+
+header .logo {
+    position: absolute;
+    top: 1.4em;
+}
