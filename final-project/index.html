@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <script src="https://kit.fontawesome.com/e61324f647.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -15,16 +17,127 @@
             <img class="logo" src="images/logo.png" alt="logo">
             <nav class="navbar">
                 <ul class="navlist">
-                    <li class="navitem one"><a href="#">home</a></li>
-                    <li class="navitem"><a href="#">about us</a></li>
-                    <li class="navitem"><a href="#">services</a></li>
-                    <li class="navitem"><a href="#">team</a></li>
-                    <li class="navitem"><a href="#">contact</a></li>
+                    <li class="navitem one"><a href="#home">home</a></li>
+                    <li class="navitem"><a href="#about-us">about us</a></li>
+                    <li class="navitem"><a href="#services">services</a></li>
+                    <li class="navitem"><a href="#team">team</a></li>
+                    <li class="navitem"><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-            <input type="search" name="search" id="search" placeholder="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <form class="search-submit" action="#">
+                <input type="search" name="search" id="search" placeholder="Search">
+                <button type="submit" class="btn-search-submit">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
         </header>
+        <main>
+            <section id="home">
+                <img src="images/main-banner.jpg" alt="main banner">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt soluta. Sunt suscipit fuga,
+                    illo et voluptate excepturi, saepe magni numquam optio rem dolore. Corrupti eveniet obcaecati nisi
+                    modi beatae.</p>
+                <form class="connect-submit" action="#">
+                    <button type="submit" class="btn-connect-submit">
+                        <p>Connect with us</p>
+                        <i class="fa-sharp fa-solid fa-play"></i>
+                    </button>
+                </form>
+            </section>
+            <section id="about-us">
+                <img src="images/about-us.jpg" alt="about us">
+                <h1>about us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur eos dolor quis beatae earum
+                    neque enim sapiente quae amet, ratione iste provident cumque illum molestiae. Perspiciatis a ex
+                    vitae?</p>
+                <p>Itaque ipsam rerum dolorum voluptas beatae autem reprehenderit tenetur molestias earum distinctio
+                    fugiat, non minus expedita eveniet nobis cumque a aliquam libero necessitatibus eligendi dignissimos
+                    nulla. Ab voluptate ad provident!</p>
+            </section>
+            <section id="services">
+                <article class="digital">
+                    <h1>our services</h1>
+                    <img src="images/digital.jpg" alt="digital">
+                    <h2>digital transformation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus quae
+                        dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
+                        obcaecati nam a repellat aperiam!</p>
+                    <form class="digital-submit" action="#">
+                        <button type="submit" class="btn-digital-submit">
+                            <p>digital plans</p>
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </form>
+                </article>
+                <article class="marketing">
+                    <img src="images/marketing.jpg" alt="marketing">
+                    <h2>marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus quae
+                        dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
+                        obcaecati nam a repellat aperiam!</p>
+                    <form class="marketing-submit" action="#">
+                        <button type="submit" class="btn-marketing-submit">
+                            <p>marketing plans</p>
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </form>
+                </article>
+                <article class="video">
+                    <img src="images/video.jpg" alt="video">
+                    <h2>video production</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus quae
+                        dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
+                        obcaecati nam a repellat aperiam!</p>
+                    <form class="video-submit" action="#">
+                        <button type="submit" class="btn-video-submit">
+                            <p>video plans</p>
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </form>
+                </article>
+                <article class="web">
+                    <img src="images/web.jpg" alt="web">
+                    <h2>web development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus quae
+                        dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
+                        obcaecati nam a repellat aperiam!</p>
+                    <form class="web-submit" action="#">
+                        <button type="submit" class="btn-web-submit">
+                            <p>web plans</p>
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </form>
+                </article>
+                <article class="print">
+                    <img src="images/print.jpg" alt="print">
+                    <h2>print</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus quae
+                        dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
+                        obcaecati nam a repellat aperiam!</p>
+                    <form class="print-submit" action="#">
+                        <button type="submit" class="btn-print-submit">
+                            <p>print plans</p>
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </form>
+                </article>
+            </section>
+            <section id="vision">
+
+            </section>
+            <section id="team">
+
+            </section>
+            <section id="contact">
+
+            </section>
+        </main>
+        <!-- <footer>
+            <p>&copy; Copyright Three Star Media, 2020</p>
+            <p>All images are taken from <a href="http://unsplash.com">Unsplash</a></p>
+        </footer> -->
     </div>
 </body>
+
 </html>

@@ -7,27 +7,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.yellowbox {
-    background-color: #c68d00;
-    padding: 5.3em;
-}
-
-.navitem a {
-    display: block;
-    text-align: center;
-    text-transform: capitalize;
-    text-decoration: none;
-    list-style-type: none;
-    color: #c68d00;
-}
-
-.one a{
-    color: #222222;
-}
-
-.navitem {
-    padding: 1em;
-}
+/* start styling of the header elements */
 
 header {
     position: relative;
@@ -37,6 +17,17 @@ header {
     padding: .7em;
 }
 
+header .yellowbox {
+    background-color: #c68d00;
+    padding: 5.3em;
+}
+
+header .logo {
+    position: absolute;
+    top: 1.4em;
+    /* logo's stars color #ffe6ac to use later */
+}
+
 header .navbar {
     position: absolute;
     bottom: 3.75em;
@@ -44,7 +35,21 @@ header .navbar {
     right: 0;
 }
 
-header #search {
+header .navlist .navitem a {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1em;
+    color: #c68d00;
+}
+
+header .navlist .one a{
+    color: #222222;
+}
+
+header .search-submit #search {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -53,19 +58,62 @@ header #search {
     padding: .45em .25em;
 }
 
-header .fa-magnifying-glass {
+header .search-submit .btn-search-submit {
     position: absolute;
     bottom: 0;
     right: 0;
     color: #c68d00;
-    padding: .27em;
+    padding: .19em .395em;
     font-size: 1.4em;
     border: 1px solid #c68d00;
     margin-right: .7rem;
     margin-bottom: .7rem;
+    background-color: transparent;
 }
 
-header .logo {
-    position: absolute;
-    top: 1.4em;
+/* end styling of the 'header' elements */
+
+/* start styling of the 'main' elements */
+
+/* start styling of the section #home elements */
+
+
+
+/* end styling of the section #home elements */
+
+/* start styling of the section #about-us elements */
+
+main #about-us h1 {
+    text-transform: capitalize;
 }
+
+/* end styling of the section #about-us elements */
+
+/* start styling of the section #services elements */
+
+main #services h1, h2, #services form button p {
+    text-transform: capitalize;
+}
+
+/* end styling of the section #services elements */
+
+/* start styling of the section #team elements */
+
+
+
+/* end styling of the section #team elements */
+
+/* start styling of the section #contact elements */
+
+
+
+/* end styling of the section #contact elements */
+
+/* end styling of the main elements */
+
+
+/* start styling of the 'footer' elements */
+
+
+
+/* end styling of the 'footer' elements */
