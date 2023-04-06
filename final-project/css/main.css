@@ -101,9 +101,8 @@ header .search-submit .btn-search-submit {
 /* start styling of the 'main' elements */
 
 main h1, h2, 
-form button p {
+form button p, label, table {
     text-transform: capitalize;
-    /* font-size: 1rem; */
 }
 
 main form button p {
@@ -220,7 +219,19 @@ main hr {
 
 /* start styling of the section #contact elements */
 
+main #contact h2 {
+    text-transform: none;
+}
 
+main #contact table, td, th {
+    border: .0625em solid black;
+    padding: 0.3125em;
+}
+
+main #contact table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
 /* end styling of the section #contact elements */
 
