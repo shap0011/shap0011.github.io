@@ -7,10 +7,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* h1 {
-    font-size: 2.5em;
-} */
-
 h1 {
     display: block;
     font-size: 2em;
@@ -21,10 +17,6 @@ h1 {
     font-weight: bold;
   }
 
-/* h2 {
-    font-size: 1.875em;
-} */
-
 h2 {
     display: block;
     font-size: 1.5em;
@@ -34,16 +26,6 @@ h2 {
     margin-right: 0;
     font-weight: bold;
   }
-/* 
-  h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-  }   */
 
 p {
     font-size: 0.875em;
@@ -108,7 +90,7 @@ header .search-submit .btn-search-submit {
     right: 0;
     color: #c68d00;
     padding: .5em .65em;
-    border: 1px solid #c68d00;
+    border: .0625em solid #c68d00;
     margin-right: .7em;
     margin-bottom: .7em;
     background-color: transparent;
@@ -133,24 +115,51 @@ main img {
     height: auto;
 }
 
+/* applying background color to main elements */
+
+main #about-us, 
+#services article.digital,
+article.marketing,
+article.video,
+article.web,
+article.print,
+#team article.john,
+#team article.bob
+ {
+    background-color: #ffe6ac;
+}
+
+/* start applying style to all buttons of 'main'*/
+
+main #services form button,
+#home form button,
+#vision form button {
+    display: flex;
+    padding: 1.5em;
+    background-color: #222222;
+    color: #fff;
+    border: none;
+}
+
+main #services form button .fa-play,
+#home form button .fa-play,
+#vision form button .fa-play {
+    padding-left: 1em;
+}
+
+/* end applying style to all buttons of 'main'*/
+
 /* start styling of the section #home elements */
 
 main #home h1, 
-main #home p {
+main #home p.par {
     color: #fff;
 }
 
-main #home form button p {
+main #home form button {
     text-transform: none;
     color: #000;
-    padding-right: 1em;
-}
-
-main #home form button {
-    display: flex;
-    padding: 1.5em;
     background-color: #c68d00;
-    border: none;
 }
 
 main #home div.welcome {
@@ -177,30 +186,6 @@ main #home div.welcome::after {
 
 /* start styling of the section #about-us elements */
 
-main #about-us {
-    background-color: #ffe6ac;
-}
-
-main #services article.digital {
-    background-color: #ffe6ac;
-}
-
-main #services form button p {
-    /* text-transform: none; */
-    color: #fff;
-    padding-right: 1em;
-}
-
-main #services form button {
-    display: flex;
-    padding: 1.5em;
-    background-color: #222222;
-    border: none;
-}
-
-main #services form button .fa-play {
-    color: #fff;
-}
 
 /* end styling of the section #about-us elements */
 
@@ -215,6 +200,10 @@ main #services form button .fa-play {
 
 
 /* end styling of the section #vision elements */
+
+main #vision form button {
+    border: .0625em solid #c68d00;
+}
 
 /* start styling of the section #team elements */
 
