@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -22,13 +22,14 @@
     <div class="wrapper">
         <!-- add a header -->
         <header>
-            <!-- use the div tag to add a block for yellow rectangular -->
+            <!-- use the div tag with class 'yellowbox' to add a block for yellow rectangular -->
             <div class="yellowbox"></div>
             <!-- use the image tag to add image 'logo.png' -->
             <img class="logo" src="images/logo.png" alt="logo">
-            <!-- add a navigation bar with a list of five links 'home', 'about us', 'services', 'team', and 'connect' -->
+            <!-- add a navigation bar with class 'navbar' with a list with class 'navlist' of five items with class 'navitem' with links  'home', 'about us', 'services', 'team', and 'connect' -->
             <nav class="navbar">
                 <ul class="navlist">
+                    <!-- add class 'one' to the first item -->
                     <li class="navitem one"><a href="#home">home</a></li>
                     <li class="navitem"><a href="#about-us">about us</a></li>
                     <li class="navitem"><a href="#services">services</a></li>
@@ -36,11 +37,11 @@
                     <li class="navitem"><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-            <!-- create a form with method 'get' -->
+            <!-- create a form with method 'get' and class 'search-submit' -->
             <form class="search-submit" action="#" method="get">
-                <!-- add input (search field) -->
+                <!-- add input (search field) with id 'search' -->
                 <input type="search" name="search" id="search" placeholder="Search">
-                <!-- add a button (submit type) using 'magnifying glass' icon -->
+                <!-- add a button (submit type) with class 'btn-search-submit' using 'magnifying glass' icon -->
                 <button type="submit" class="btn-search-submit">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 </button>
@@ -48,7 +49,7 @@
         </header>
         <!-- create a main with content in it -->
         <main>
-            <!-- add a section with class 'home' -->
+            <!-- add a section with id 'home' -->
             <section id="home">
                 <!-- use the image tag to add image 'main-banner.png' -->
                 <img src="images/main-banner.jpg" alt="main banner">
@@ -62,9 +63,9 @@
                         illo et voluptate excepturi, saepe magni numquam optio rem dolore. Corrupti eveniet obcaecati
                         nisi
                         modi beatae.</p>
-                    <!-- create a form with method 'get' -->
+                    <!-- create a form with class 'connect-submit' and with method 'get' -->
                     <form class="connect-submit" action="#" method="get">
-                        <!-- add a button (submit type) using 'play' icon -->
+                        <!-- add a button (submit type) with class 'btn-connect-submit' using 'play' icon -->
                         <button type="submit" class="btn-connect-submit">
                             Connect with us
                             <i class="fa-sharp fa-solid fa-play"></i>
@@ -72,7 +73,7 @@
                     </form>
                 </div>
             </section>
-            <!-- add a section with class 'about-us' -->
+            <!-- add a section with id 'about-us' -->
             <section id="about-us">
                 <!-- use the image tag to add image 'about-us.png' -->
                 <img src="images/about-us.jpg" alt="about us">
@@ -86,10 +87,11 @@
                     fugiat, non minus expedita eveniet nobis cumque a aliquam libero necessitatibus eligendi dignissimos
                     nulla. Ab voluptate ad provident!</p>
             </section>
-            <!-- add a section with class 'services' -->
+            <!-- add a section with id 'services' -->
             <section id="services">
                 <!-- add heading h1 -->
                 <h1>our services</h1>
+                <!-- create an article with class 'digital' with content in it -->
                 <article class="digital">
                     <!-- use the image tag to add image 'digital.png' -->
                     <img src="images/digital.jpg" alt="digital">
@@ -100,15 +102,16 @@
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                        <!-- create a form with method 'get' -->
+                    <!-- create a form with class 'digital-submit' and with method 'get' -->
                     <form class="digital-submit" action="#" method="get">
-                        <!-- add a button (submit type) using 'play' icon -->
+                        <!-- add a button (submit type) with class 'btn-digital-submit' using 'play' icon -->
                         <button type="submit" class="btn-digital-submit">
                             digital plans
                             <i class="fa-sharp fa-solid fa-play"></i>
                         </button>
                     </form>
                 </article>
+                <!-- create an article with class 'marketing' with content in it -->
                 <article class="marketing">
                     <!-- use the image tag to add image 'marketing.png' -->
                     <img src="images/marketing.jpg" alt="marketing">
@@ -119,7 +122,7 @@
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                        <!-- create a form with method 'get' -->
+                    <!-- create a form with class 'marketing-submit' and with method 'get' -->
                     <form class="marketing-submit" action="#" method="get">
                         <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-marketing-submit">
@@ -128,6 +131,7 @@
                         </button>
                     </form>
                 </article>
+                <!-- create an article with class 'video' with content in it -->
                 <article class="video">
                     <!-- use the image tag to add image 'video.png' -->
                     <img src="images/video.jpg" alt="video">
@@ -138,7 +142,7 @@
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                        <!-- create a form with method 'get' -->
+                    <!-- create a form with class 'video-submit' and with method 'get' -->
                     <form class="video-submit" action="#" method="get">
                         <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-video-submit">
@@ -147,6 +151,7 @@
                         </button>
                     </form>
                 </article>
+                <!-- create an article with class 'web' with content in it -->
                 <article class="web">
                     <!-- use the image tag to add image 'web.png' -->
                     <img src="images/web.jpg" alt="web">
@@ -157,15 +162,16 @@
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                        <!-- create a form with method 'get' -->
+                    <!-- create a form with class 'web-submit' with method 'get' -->
                     <form class="web-submit" action="#" method="get">
-                        <!-- add a button (submit type) using 'play' icon -->
+                        <!-- add a button (submit type) with class 'btn-web-submit' using 'play' icon -->
                         <button type="submit" class="btn-web-submit">
                             web plans
                             <i class="fa-sharp fa-solid fa-play"></i>
                         </button>
                     </form>
                 </article>
+                <!-- create an article with class 'print' with content in it -->
                 <article class="print">
                     <!-- use the image tag to add image 'print.png' -->
                     <img src="images/print.jpg" alt="print">
@@ -176,9 +182,9 @@
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                        <!-- create a form with method 'get' -->
+                    <!-- create a form with method 'get' -->
                     <form class="print-submit" action="#" method="get">
-                        <!-- add a button (submit type) using 'play' icon -->
+                        <!-- add a button (submit type) with class 'btn-print-submit' using 'play' icon -->
                         <button type="submit" class="btn-print-submit">
                             print plans
                             <i class="fa-sharp fa-solid fa-play"></i>
@@ -186,7 +192,7 @@
                     </form>
                 </article>
             </section>
-            <!-- add a section with class 'vision' -->
+            <!-- add a section with id 'vision' -->
             <section id="vision">
                 <!-- use the image tag to add image 'vision.png' -->
                 <img src="images/vision.jpg" alt="vision">
@@ -196,19 +202,20 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus quae
                     dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                     obcaecati nam a repellat aperiam!</p>
-                    <!-- create a form with method 'get' -->
+                <!-- create a form with class 'print-submit' with method 'get' -->
                 <form class="print-submit" action="#" method="get">
-                    <!-- add a button (submit type) using 'play' icon -->
+                    <!-- add a button (submit type) with class 'btn-vision-submit' using 'play' icon -->
                     <button type="submit" class="btn-vision-submit">
                         learn more
                         <i class="fa-sharp fa-solid fa-play"></i>
                     </button>
                 </form>
             </section>
-            <!-- add a section with class 'team' -->
+            <!-- add a section with id 'team' -->
             <section id="team">
                 <!-- add heading h1 -->
                 <h1>our team</h1>
+                <!-- create an article with class 'john' with content in it -->
                 <article class="john">
                     <!-- use the image tag to add image 'john.png' -->
                     <img src="images/john.jpg" alt="John Doe">
@@ -224,6 +231,7 @@
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
                 </article>
+                <!-- create an article with class 'bob' with content in it -->
                 <article class="bob">
                     <!-- use the image tag to add image 'bob.png' -->
                     <img src="images/bob.jpg" alt="Bob Rite">
@@ -240,14 +248,15 @@
                         obcaecati nam a repellat aperiam!</p>
                 </article>
             </section>
-            <!-- add a section with class 'contact' -->
+            <!-- add a section with id 'contact' -->
             <section id="contact">
                 <!-- add heading h1 -->
                 <h1>contact us</h1>
+                <!-- create an article with class 'message' with content in it -->
                 <article class="message">
                     <!-- add heading h2 -->
                     <h2>Send us a message</h2>
-                    <!-- create a form with method 'post' -->
+                    <!-- create a form with class 'contact-submit' and with method 'post' -->
                     <form class="contact-submit" action="#" method="post">
                         <!-- create a block with input with id 'fullname' and a lable for the input -->
                         <div>
@@ -270,6 +279,7 @@
                         </button>
                     </form>
                 </article>
+                <!-- create an article with class 'operation' with content in it -->
                 <article class="operation">
                     <!-- add heading h2 -->
                     <h2>Hours of operation</h2>
@@ -289,6 +299,7 @@
                         </tr>
                     </table>
                 </article>
+                <!-- create an article with class 'location' with content in it -->
                 <article class="location">
                     <!-- add heading h2 -->
                     <h2>Location</h2>
@@ -302,8 +313,9 @@
         </main>
         <!-- add a footer -->
         <footer>
-            <!-- add two paragraphs -->
+            <!-- add paragraph with copyright -->
             <p>&copy; Copyright Three Star Media, 2020</p>
+            <!-- add paragraph with link with target attribute 'blank' to be opened in a new blank window -->
             <p>All images are taken from <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
         </footer>
     </div>
