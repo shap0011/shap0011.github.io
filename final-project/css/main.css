@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 19px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -19,6 +19,7 @@ h1 {
 
 h2 {
     display: block;
+    font-family: 'Hind Siliguri', sans-serif;
     font-size: 1.5em;
     margin-top: 0.8em;
     margin-bottom: 0.5em;
@@ -132,7 +133,8 @@ article.print,
 
 main #services form button,
 #home form button,
-#vision form button {
+#vision form button,
+#contact form button {
     display: flex;
     padding: 1.5em;
     background-color: #222222;
@@ -223,15 +225,47 @@ main #contact h2 {
     text-transform: none;
 }
 
-main #contact table, td, th {
-    border: .0625em solid black;
-    padding: 0.3125em;
+/* start styling of the article .message elements */
+
+main #contact .message div {
+    display: grid;
 }
 
-main #contact table {
+main #contact .message form button {
+    padding: .35em;
+    color: #c68d00;
+}
+
+/* end styling of the article .message elements */
+
+/* start styling of the article .operation elements */
+
+main #contact .operation table, .operation td, .operation th {
+    border: .0625em solid black;
+    padding: 0.3125em;
+    font-weight: inherit;
+}
+
+main #contact .operation table th {
+    background-color: #ffe6ac;
+}
+
+main #contact .operation table {
     width: 100%;
     border-collapse: collapse;
 }
+
+/* end styling of the article .operation elements */
+
+/* start styling of the article .location elements */
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 200px;
+}
+
+/* end styling of the article .location elements */
 
 /* end styling of the section #contact elements */
 
@@ -240,6 +274,15 @@ main #contact table {
 
 /* start styling of the 'footer' elements */
 
+footer {
+    background-color: #222222;
+    padding: 2.5em 0em .5em 1em;
+}
 
+footer a,
+footer p {
+    color: #c68d00;
+    margin-bottom: 1em;
+}
 
 /* end styling of the 'footer' elements */
