@@ -6,20 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
+    <!-- add links for two fonts 'Roboto' for header h1, text of paragraphs and buttons, and 'Hind Siligury' for header h2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Roboto&display=swap"
         rel="stylesheet">
-
+    <!-- add script for icons 'magnifier' and 'play' -->
     <script src="https://kit.fontawesome.com/e61324f647.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- the link:css is temporary disabled to hide unfinished styling -->
+    <link rel="stylesheet" href="css/main.css" disabled>
 </head>
 
 <body>
-    <div class="container">
+    <!-- create a block with class 'wrapper' -->
+    <div class="wrapper">
+        <!-- add a header -->
         <header>
+            <!-- use the div tag to add a block for yellow rectangular -->
             <div class="yellowbox"></div>
+            <!-- use the image tag to add image 'logo.png' -->
             <img class="logo" src="images/logo.png" alt="logo">
+            <!-- add a navigation bar with a list of five links 'home', 'about us', 'services', 'team', and 'connect' -->
             <nav class="navbar">
                 <ul class="navlist">
                     <li class="navitem one"><a href="#home">home</a></li>
@@ -29,24 +36,35 @@
                     <li class="navitem"><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-            <form class="search-submit" action="#">
+            <!-- create a form with method 'get' -->
+            <form class="search-submit" action="#" method="get">
+                <!-- add input (search field) -->
                 <input type="search" name="search" id="search" placeholder="Search">
+                <!-- add a button (submit type) using 'magnifying glass' icon -->
                 <button type="submit" class="btn-search-submit">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
         </header>
+        <!-- create a main with content in it -->
         <main>
+            <!-- add a section with class 'home' -->
             <section id="home">
+                <!-- use the image tag to add image 'main-banner.png' -->
                 <img src="images/main-banner.jpg" alt="main banner">
+                <!-- create a block with class 'welcome' -->
                 <div class="welcome">
+                    <!-- add heading h1 -->
                     <h1>Welcome to Three Star Media</h1>
+                    <!-- add a paragraph with class 'par' -->
                     <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt soluta. Sunt
                         suscipit fuga,
                         illo et voluptate excepturi, saepe magni numquam optio rem dolore. Corrupti eveniet obcaecati
                         nisi
                         modi beatae.</p>
-                    <form class="connect-submit" action="#">
+                    <!-- create a form with method 'get' -->
+                    <form class="connect-submit" action="#" method="get">
+                        <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-connect-submit">
                             Connect with us
                             <i class="fa-sharp fa-solid fa-play"></i>
@@ -54,9 +72,13 @@
                     </form>
                 </div>
             </section>
+            <!-- add a section with class 'about-us' -->
             <section id="about-us">
+                <!-- use the image tag to add image 'about-us.png' -->
                 <img src="images/about-us.jpg" alt="about us">
+                <!-- add heading h1 -->
                 <h1>about us</h1>
+                <!-- add two paragraphs -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur eos dolor quis beatae earum
                     neque enim sapiente quae amet, ratione iste provident cumque illum molestiae. Perspiciatis a ex
                     vitae?</p>
@@ -64,16 +86,23 @@
                     fugiat, non minus expedita eveniet nobis cumque a aliquam libero necessitatibus eligendi dignissimos
                     nulla. Ab voluptate ad provident!</p>
             </section>
+            <!-- add a section with class 'services' -->
             <section id="services">
+                <!-- add heading h1 -->
                 <h1>our services</h1>
                 <article class="digital">
+                    <!-- use the image tag to add image 'digital.png' -->
                     <img src="images/digital.jpg" alt="digital">
+                    <!-- add heading h2 -->
                     <h2>digital transformation</h2>
+                    <!-- add a paragraph -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                    <form class="digital-submit" action="#">
+                        <!-- create a form with method 'get' -->
+                    <form class="digital-submit" action="#" method="get">
+                        <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-digital-submit">
                             digital plans
                             <i class="fa-sharp fa-solid fa-play"></i>
@@ -81,13 +110,18 @@
                     </form>
                 </article>
                 <article class="marketing">
+                    <!-- use the image tag to add image 'marketing.png' -->
                     <img src="images/marketing.jpg" alt="marketing">
+                    <!-- add heading h2 -->
                     <h2>marketing</h2>
+                    <!-- add a paragraph -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                    <form class="marketing-submit" action="#">
+                        <!-- create a form with method 'get' -->
+                    <form class="marketing-submit" action="#" method="get">
+                        <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-marketing-submit">
                             marketing plans
                             <i class="fa-sharp fa-solid fa-play"></i>
@@ -95,13 +129,18 @@
                     </form>
                 </article>
                 <article class="video">
+                    <!-- use the image tag to add image 'video.png' -->
                     <img src="images/video.jpg" alt="video">
+                    <!-- add heading h2 -->
                     <h2>video production</h2>
+                    <!-- add a paragraph -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                    <form class="video-submit" action="#">
+                        <!-- create a form with method 'get' -->
+                    <form class="video-submit" action="#" method="get">
+                        <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-video-submit">
                             video plans
                             <i class="fa-sharp fa-solid fa-play"></i>
@@ -109,13 +148,18 @@
                     </form>
                 </article>
                 <article class="web">
+                    <!-- use the image tag to add image 'web.png' -->
                     <img src="images/web.jpg" alt="web">
+                    <!-- add heading h2 -->
                     <h2>web development</h2>
+                    <!-- add a paragraph -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                    <form class="web-submit" action="#">
+                        <!-- create a form with method 'get' -->
+                    <form class="web-submit" action="#" method="get">
+                        <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-web-submit">
                             web plans
                             <i class="fa-sharp fa-solid fa-play"></i>
@@ -123,13 +167,18 @@
                     </form>
                 </article>
                 <article class="print">
+                    <!-- use the image tag to add image 'print.png' -->
                     <img src="images/print.jpg" alt="print">
+                    <!-- add heading h2 -->
                     <h2>print</h2>
+                    <!-- add a paragraph -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
-                    <form class="print-submit" action="#">
+                        <!-- create a form with method 'get' -->
+                    <form class="print-submit" action="#" method="get">
+                        <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-print-submit">
                             print plans
                             <i class="fa-sharp fa-solid fa-play"></i>
@@ -137,66 +186,94 @@
                     </form>
                 </article>
             </section>
+            <!-- add a section with class 'vision' -->
             <section id="vision">
+                <!-- use the image tag to add image 'vision.png' -->
                 <img src="images/vision.jpg" alt="vision">
+                <!-- add heading h2 -->
                 <h2>our vision</h2>
+                <!-- add a paragraph -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus quae
                     dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                     obcaecati nam a repellat aperiam!</p>
-                <form class="print-submit" action="#">
+                    <!-- create a form with method 'get' -->
+                <form class="print-submit" action="#" method="get">
+                    <!-- add a button (submit type) using 'play' icon -->
                     <button type="submit" class="btn-vision-submit">
                         learn more
                         <i class="fa-sharp fa-solid fa-play"></i>
                     </button>
                 </form>
             </section>
+            <!-- add a section with class 'team' -->
             <section id="team">
+                <!-- add heading h1 -->
                 <h1>our team</h1>
                 <article class="john">
+                    <!-- use the image tag to add image 'john.png' -->
                     <img src="images/john.jpg" alt="John Doe">
+                    <!-- add heading h2 -->
                     <h2>john doe</h2>
+                    <!-- add a paragraph with class 'par-teammate'-->
                     <p class="par-teammate">CEO and Co-owner</p>
+                    <!-- add horizontal rule -->
                     <hr>
+                    <!-- add a paragraph -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
                 </article>
                 <article class="bob">
+                    <!-- use the image tag to add image 'bob.png' -->
                     <img src="images/bob.jpg" alt="Bob Rite">
+                    <!-- add heading h2 -->
                     <h2>bob rite</h2>
+                    <!-- add a paragraph with class 'par-teammate'-->
                     <p class="par-teammate">CEO and Co-owner</p>
+                    <!-- add horizontal rule -->
                     <hr>
+                    <!-- add a paragraph -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus
                         quae
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
                 </article>
             </section>
+            <!-- add a section with class 'contact' -->
             <section id="contact">
+                <!-- add heading h1 -->
                 <h1>contact us</h1>
                 <article class="message">
+                    <!-- add heading h2 -->
                     <h2>Send us a message</h2>
-                    <form class="contact-submit" action="#">
+                    <!-- create a form with method 'post' -->
+                    <form class="contact-submit" action="#" method="post">
+                        <!-- create a block with input with id 'fullname' and a lable for the input -->
                         <div>
                             <label for="fullname">full name</label>
                             <input type="text" name="fullname" id="fullname" required>
                         </div>
+                        <!-- create a block with input with id 'email' and a lable for the input -->
                         <div>
                             <label for="email">email</label>
                             <input type="email" name="email" id="email" required>
                         </div>
+                        <!-- create a block with text area with id 'message' and a lable for the text area -->
                         <div>
                             <label for="message">message</label>
                             <textarea name="message" id="message" cols="30" rows="6" required></textarea>
                         </div>
+                        <!-- add a button (submit type) with class 'btn-contact-submit' -->
                         <button type="submit" class="btn-contact-submit">
                             send
                         </button>
                     </form>
                 </article>
                 <article class="operation">
+                    <!-- add heading h2 -->
                     <h2>Hours of operation</h2>
+                    <!-- create a table with three rows and two columns -->
                     <table>
                         <tr>
                             <th>days</th>
@@ -213,7 +290,9 @@
                     </table>
                 </article>
                 <article class="location">
+                    <!-- add heading h2 -->
                     <h2>Location</h2>
+                    <!-- embed an Algonquin College google map -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778910497265!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680837392578!5m2!1sen!2sca"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -221,7 +300,9 @@
                 </article>
             </section>
         </main>
+        <!-- add a footer -->
         <footer>
+            <!-- add two paragraphs -->
             <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
         </footer>
