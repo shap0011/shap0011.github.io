@@ -102,12 +102,15 @@ header .search-submit .btn-search-submit {
 /* start styling of the 'main' elements */
 
 main h1, h2, 
-form button p, label, table {
+form button, label, table {
     text-transform: capitalize;
 }
 
-main form button p {
-    font-size: 1.05rem;
+main #home form button,
+main #services form button,
+main #vision form button,
+main #contact form button {
+    font-size: 1.2rem;
 }
 
 main img {
