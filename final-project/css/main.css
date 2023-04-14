@@ -53,19 +53,18 @@ header {
     position: relative;
     background-color: #222222;
     width: auto;
-    height: 27.7em;
-    padding: .7em;
+    height: 32.95em;
+    padding: .95em;
 }
 
 header .yellowbox {
     background-color: #c78c06;
-    padding: 5.3em;
+    padding: 6.26em;
 }
 
 header .logo {
     position: absolute;
-    top: 1.4em;
-    /* logo's stars color #ffe6ac to use later */
+    top: 2.2em;
 }
 
 header .navbar {
@@ -75,29 +74,29 @@ header .navbar {
     right: 0;
 }
 
-header .navlist .navitem a {
+header nav.navbar ul.navlist li.navitem a, li.one a {
     display: block;
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;
-    /* list-style-type: none; */
-    padding: 1em;
+    padding: 1.15em;
     color: #c78c06;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.16em;
 }
 
-header .navlist .one a{
+header nav.navbar ul.navlist li.one a{
     color: #222222;
+    font-weight: 500;
 }
 
 header .search-submit #search {
     position: absolute;
     bottom: 0;
     left: 0;
-    /* right: 3.05263em; */
-    right: 3.10526em;
-    /* right: 3.15789em; */
-    margin: 0 0 .7em .7em;
-    padding: .45em .25em;
+    right: 3.3em;
+    margin: 0 0 .95em .95em;
+    padding: .32em .25em;
 }
 
 header .search-submit .btn-search-submit {
@@ -105,10 +104,10 @@ header .search-submit .btn-search-submit {
     bottom: 0;
     right: 0;
     color: #c78c06;
-    padding: .5em .65em;
-    border: .0625em solid #c78c06;
-    margin-right: .7em;
-    margin-bottom: .7em;
+    padding: .375em .6em;
+    border: .056em solid #c78c06;
+    margin-right: .95em;
+    margin-bottom: .95em;
     background-color: transparent;
 }
 
@@ -125,7 +124,7 @@ main #home form button,
 main #services form button,
 main #vision form button,
 main #contact form button {
-    font-size: 1.355rem;
+    font-size: 1.37rem;
 }
 
 main img {
@@ -145,6 +144,8 @@ article.print,
 #team article.bob
  {
     background-color: #ffe6ac;
+    padding: .95em;
+    /* margin-top: 0; */
 }
 
 /* start applying style to all buttons of 'main'*/
@@ -154,7 +155,7 @@ main #services form button,
 #vision form button,
 #contact form button {
     display: flex;
-    padding: 1.5em;
+    padding: 1.55em;
     background-color: #222222;
     color: #fff;
     border: none;
@@ -163,7 +164,7 @@ main #services form button,
 main #services form button .fa-play,
 #home form button .fa-play,
 #vision form button .fa-play {
-    padding-left: 1em;
+    padding-left: .8em;
 }
 
 /* end applying style to all buttons of 'main'*/
@@ -182,14 +183,8 @@ main #home form button {
     background-color: #c78c06;
 }
 
-main #home div.welcome {
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: .7em .7em .7em .7em;
-    bottom: 540px;
-    z-index: 1;
-}
+/* create background layer for .welcome content
+with background-color #222 and opacity .68 */
 
 main #home div.welcome::after {
     content: '';
@@ -203,10 +198,36 @@ main #home div.welcome::after {
     z-index: -1;
 }
 
+/* start the block div.welcome positioning 
+on top of block div.img-main-banner */
+
+main #home div.img-main-banner {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+main #home div.welcome {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: .7em .7em .7em .7em;
+    z-index: 1;
+    position: absolute;
+    top: 33.1em;
+}
+
+/* end the block div.welcome positioning 
+on top of block div.img-main-banner */
+
+
 /* end styling of the section #home elements */
 
 /* start styling of the section #about-us elements */
 
+main #about-us {
+
+}
 
 /* end styling of the section #about-us elements */
 
