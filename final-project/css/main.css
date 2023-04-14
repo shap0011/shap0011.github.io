@@ -1,35 +1,50 @@
 /* css code */
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-size: 19px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    /* font-size: 100%; */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 h1 {
-    display: block;
-    font-size: 2em;
-    margin-top: 0.6em;
+    font-size: 4em;
+    /* margin-top: 0.6em;
     margin-bottom: 0.4em;
     margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+    margin-right: 0; */
+    font-weight: 800;
+    margin-block-start: .5em;
+    margin-block-end: .3em;
   }
 
-h2 {
-    display: block;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-size: 1.5em;
-    margin-top: 0.8em;
+h2, caption {
+    font-size: 1.875em;
+    /* margin-top: 0.8em;
     margin-bottom: 0.5em;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 0; */
     font-weight: bold;
+    margin-block-start: .83em;
+    margin-block-end: .83em;
   }
 
 p {
-    font-size: 0.875em;
+    font-size: 0.85em;   
+    margin-block-start: 1em;
+    margin-block-end: .65em;
+}
+
+/* define the maximum width of the container as 1200px:
+'max-width' property sets a maximum width of 1200px,
+'width: 100%' sets the content inside .wrapper  to fill the maximum 
+space of their container (1200px),
+'margin: 0 auto' centers .wrapper in the window for larger windows ( > 1200px) */
+
+body div.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* start styling of the header elements */
@@ -43,7 +58,7 @@ header {
 }
 
 header .yellowbox {
-    background-color: #c68d00;
+    background-color: #c78c06;
     padding: 5.3em;
 }
 
@@ -65,9 +80,9 @@ header .navlist .navitem a {
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 1em;
-    color: #c68d00;
+    color: #c78c06;
 }
 
 header .navlist .one a{
@@ -89,9 +104,9 @@ header .search-submit .btn-search-submit {
     position: absolute;
     bottom: 0;
     right: 0;
-    color: #c68d00;
+    color: #c78c06;
     padding: .5em .65em;
-    border: .0625em solid #c68d00;
+    border: .0625em solid #c78c06;
     margin-right: .7em;
     margin-bottom: .7em;
     background-color: transparent;
@@ -110,7 +125,7 @@ main #home form button,
 main #services form button,
 main #vision form button,
 main #contact form button {
-    font-size: 1.2rem;
+    font-size: 1.355rem;
 }
 
 main img {
@@ -158,12 +173,13 @@ main #services form button .fa-play,
 main #home h1, 
 main #home p.par {
     color: #fff;
+    text-transform: none;
 }
 
 main #home form button {
     text-transform: none;
     color: #000;
-    background-color: #c68d00;
+    background-color: #c78c06;
 }
 
 main #home div.welcome {
@@ -171,15 +187,16 @@ main #home div.welcome {
     height: auto;
     position: relative;
     padding: .7em .7em .7em .7em;
+    bottom: 540px;
+    z-index: 1;
 }
 
 main #home div.welcome::after {
     content: '';
     width: 100%;
-    /* height: auto; */
     height: 100%;
     background-color: #222222;
-    opacity: .5;
+    opacity: .68;
     position: absolute;
     top: 0;
     left: 0;
@@ -206,7 +223,7 @@ main #home div.welcome::after {
 /* end styling of the section #vision elements */
 
 main #vision form button {
-    border: .0625em solid #c68d00;
+    border: .0625em solid #c78c06;
 }
 
 /* start styling of the section #team elements */
@@ -216,7 +233,7 @@ main #team p.par-teammate {
 }
 
 main hr {
-    border-color: #c78b07;
+    border-color: #c78c06;
     margin-bottom: 1em;
 }
 
@@ -224,8 +241,12 @@ main hr {
 
 /* start styling of the section #contact elements */
 
-main #contact h2 {
+main #contact h2, caption {
     text-transform: none;
+}
+
+main #contact caption {
+    text-align: left;
 }
 
 /* start styling of the article .message elements */
@@ -236,7 +257,7 @@ main #contact .message div {
 
 main #contact .message form button {
     padding: .35em;
-    color: #c68d00;
+    color: #c78c06;
 }
 
 /* end styling of the article .message elements */
@@ -246,16 +267,16 @@ main #contact .message form button {
 main #contact .operation table, .operation td, .operation th {
     border: .0625em solid black;
     padding: 0.3125em;
-    font-weight: inherit;
+    /* font-weight: inherit; */
 }
 
 main #contact .operation table th {
     background-color: #ffe6ac;
+    font-weight: bold;
 }
 
 main #contact .operation table {
     width: 100%;
-    border-collapse: collapse;
 }
 
 /* end styling of the article .operation elements */
@@ -284,7 +305,7 @@ footer {
 
 footer a,
 footer p {
-    color: #c68d00;
+    color: #c78c06;
     margin-bottom: 1em;
 }
 

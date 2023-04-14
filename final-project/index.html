@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
-    <!-- add links for two fonts 'Roboto' for header h1, text of paragraphs and buttons, and 'Hind Siligury' for header h2 -->
+    <!-- add links for 'Open Sans' Google font for the webpage -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- add script for icons 'magnifier' and 'play' -->
     <script src="https://kit.fontawesome.com/e61324f647.js" crossorigin="anonymous"></script>
-    <!-- the link:css is temporary disabled to hide unfinished styling -->
-    <link rel="stylesheet" href="css/main.css" disabled>
+    <!-- add link:css reset.css - CSS reset code before the main.css stylesheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- the link:css main.css - CSS main code of the developer stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -281,22 +282,26 @@
                 </article>
                 <!-- create an article with class 'operation' with content in it -->
                 <article class="operation">
-                    <!-- add heading h2 -->
-                    <h2>Hours of operation</h2>
                     <!-- create a table with three rows and two columns -->
                     <table>
-                        <tr>
-                            <th>days</th>
-                            <th>hours</th>
-                        </tr>
-                        <tr>
-                            <td>monday - friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>saturday - sunday</td>
-                            <td>closed</td>
-                        </tr>
+                        <!-- add caption -->
+                        <caption>Hours of operation</caption>
+                        <thead>
+                            <tr>
+                                <th>days</th>
+                                <th>hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>monday - friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                            <tr>
+                                <td>saturday - sunday</td>
+                                <td>closed</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </article>
                 <!-- create an article with class 'location' with content in it -->
