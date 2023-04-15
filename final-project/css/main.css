@@ -1,36 +1,45 @@
 /* css code */
-*{
+
+/* apply to all tags properties and values */
+
+* {
     box-sizing: border-box;
     font-size: 18px;
-    /* font-size: 100%; */
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 }
 
-h1 {
-    font-size: 4em;
-    /* margin-top: 0.6em;
-    margin-bottom: 0.4em;
-    margin-left: 0;
-    margin-right: 0; */
-    font-weight: 800;
-    margin-block-start: .5em;
-    margin-block-end: .3em;
-  }
+/* define section #home header h1 properties and values*/
 
-h2, caption {
+#home h1 {
+    font-size: 4em;
+    font-weight: 800;
+    margin-block-start: .55em;
+    margin-block-end: .3em;
+}
+
+/* define other sections header h1 properties and values*/
+
+h1 {
+    font-size: 2.7em;
+    font-weight: bold;
+    margin-block-start: .33em;
+    margin-block-end: .33em;
+}
+
+/* define header h2 and caption properties and values*/
+
+h2,
+caption {
     font-size: 1.875em;
-    /* margin-top: 0.8em;
-    margin-bottom: 0.5em;
-    margin-left: 0;
-    margin-right: 0; */
     font-weight: bold;
     margin-block-start: .83em;
     margin-block-end: .83em;
-  }
+}
 
+/* define paragraph p properties and values */
 p {
-    font-size: 0.85em;   
+    font-size: 0.85em;
     margin-block-start: 1em;
     margin-block-end: .65em;
 }
@@ -54,7 +63,7 @@ header {
     background-color: #222222;
     width: auto;
     height: 32.95em;
-    padding: .95em;
+    padding: .85em;
 }
 
 header .yellowbox {
@@ -74,7 +83,8 @@ header .navbar {
     right: 0;
 }
 
-header nav.navbar ul.navlist li.navitem a, li.one a {
+header nav.navbar ul.navlist li.navitem a,
+li.one a {
     display: block;
     text-align: center;
     text-transform: capitalize;
@@ -85,7 +95,7 @@ header nav.navbar ul.navlist li.navitem a, li.one a {
     font-size: 1.16em;
 }
 
-header nav.navbar ul.navlist li.one a{
+header nav.navbar ul.navlist li.one a {
     color: #222222;
     font-weight: 500;
 }
@@ -95,7 +105,7 @@ header .search-submit #search {
     bottom: 0;
     left: 0;
     right: 3.3em;
-    margin: 0 0 .95em .95em;
+    margin: 0 0 .85em .85em;
     padding: .32em .25em;
 }
 
@@ -106,17 +116,26 @@ header .search-submit .btn-search-submit {
     color: #c78c06;
     padding: .375em .6em;
     border: .056em solid #c78c06;
-    margin-right: .95em;
-    margin-bottom: .95em;
+    margin-right: .85em;
+    margin-bottom: .85em;
     background-color: transparent;
+}
+
+/* increase size of search icon to 1.3em */
+
+header .search-submit .btn-search-submit i.fa-solid {
+    font-size: 1.3em;
 }
 
 /* end styling of the 'header' elements */
 
 /* start styling of the 'main' elements */
 
-main h1, h2, 
-form button, label, table {
+main h1,
+h2,
+form button,
+label,
+table {
     text-transform: capitalize;
 }
 
@@ -134,18 +153,16 @@ main img {
 
 /* applying background color to main elements */
 
-main #about-us, 
+main #about-us,
 #services article.digital,
 article.marketing,
 article.video,
 article.web,
 article.print,
 #team article.john,
-#team article.bob
- {
+#team article.bob {
     background-color: #ffe6ac;
-    padding: .95em;
-    /* margin-top: 0; */
+    padding: .85em;
 }
 
 /* start applying style to all buttons of 'main'*/
@@ -167,11 +184,16 @@ main #services form button .fa-play,
     padding-left: .8em;
 }
 
+/* align button text and icon in one line */
+main section form button i.fa-solid {
+    line-height: inherit;
+}
+
 /* end applying style to all buttons of 'main'*/
 
 /* start styling of the section #home elements */
 
-main #home h1, 
+main #home h1,
 main #home p.par {
     color: #fff;
     text-transform: none;
@@ -203,6 +225,7 @@ on top of block div.img-main-banner */
 
 main #home div.img-main-banner {
     position: relative;
+    background-color: #ffe6ac;
     top: 0;
     left: 0;
 }
@@ -211,11 +234,12 @@ main #home div.welcome {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: .7em .7em .7em .7em;
+    padding: .85em .85em .85em .85em;
     z-index: 1;
     position: absolute;
     top: 33.1em;
 }
+
 
 /* end the block div.welcome positioning 
 on top of block div.img-main-banner */
@@ -226,7 +250,7 @@ on top of block div.img-main-banner */
 /* start styling of the section #about-us elements */
 
 main #about-us {
-
+    padding-top: .55em;
 }
 
 /* end styling of the section #about-us elements */
@@ -262,7 +286,8 @@ main hr {
 
 /* start styling of the section #contact elements */
 
-main #contact h2, caption {
+main #contact h2,
+caption {
     text-transform: none;
 }
 
@@ -285,7 +310,9 @@ main #contact .message form button {
 
 /* start styling of the article .operation elements */
 
-main #contact .operation table, .operation td, .operation th {
+main #contact .operation table,
+.operation td,
+.operation th {
     border: .0625em solid black;
     padding: 0.3125em;
     /* font-weight: inherit; */
