@@ -67,7 +67,8 @@ header {
 }
 
 header .yellowbox {
-    background-color: #c78c06;
+    /* background-color: #c78c06; */
+    background-color: #c68d00;
     padding: 6.26em;
 }
 
@@ -114,7 +115,7 @@ header .search-submit .btn-search-submit {
     bottom: 0;
     right: 0;
     color: #c78c06;
-    padding: .375em .6em;
+    padding: .375em .52em;
     border: .056em solid #c78c06;
     margin-right: .85em;
     margin-bottom: .85em;
@@ -131,61 +132,44 @@ header .search-submit .btn-search-submit i.fa-solid {
 
 /* start styling of the 'main' elements */
 
-main h1,
+h1,
 h2,
-form button,
 label,
 table {
     text-transform: capitalize;
 }
 
-main #home form button,
-main #services form button,
-main #vision form button,
-main #contact form button {
-    font-size: 1.37rem;
-}
-
-main img {
+img {
     width: 100%;
     height: auto;
 }
 
 /* applying background color to main elements */
 
-main #about-us,
-#services article.digital,
-article.marketing,
-article.video,
-article.web,
-article.print,
-#team article.john,
-#team article.bob {
-    background-color: #ffe6ac;
-    padding: .85em;
-}
-
 /* start applying style to all buttons of 'main'*/
 
-main #services form button,
+#services form button,
 #home form button,
 #vision form button,
 #contact form button {
     display: flex;
-    padding: 1.55em;
+    padding: 1.45em;
     background-color: #222222;
     color: #fff;
     border: none;
+    font-size: 1.37rem;
+    text-transform: capitalize;
 }
 
-main #services form button .fa-play,
+#services form button .fa-play,
 #home form button .fa-play,
 #vision form button .fa-play {
     padding-left: .8em;
 }
 
 /* align button text and icon in one line */
-main section form button i.fa-solid {
+
+form button i.fa-solid {
     line-height: inherit;
 }
 
@@ -193,27 +177,27 @@ main section form button i.fa-solid {
 
 /* start styling of the section #home elements */
 
-main #home h1,
-main #home p.par {
+#home h1,
+#home p.par {
     color: #fff;
     text-transform: none;
 }
 
-main #home form button {
+#home form button {
     text-transform: none;
     color: #000;
     background-color: #c78c06;
 }
 
 /* create background layer for .welcome content
-with background-color #222 and opacity .68 */
+with background-color #222 and opacity .99 */
 
-main #home div.welcome::after {
+#home div.welcome::after {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #222222;
-    opacity: .68;
+    background-color: #22222299;
+    /* opacity: .99; */
     position: absolute;
     top: 0;
     left: 0;
@@ -223,14 +207,14 @@ main #home div.welcome::after {
 /* start the block div.welcome positioning 
 on top of block div.img-main-banner */
 
-main #home div.img-main-banner {
+#home div.img-main-banner {
     position: relative;
     background-color: #ffe6ac;
     top: 0;
     left: 0;
 }
 
-main #home div.welcome {
+#home div.welcome {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -240,7 +224,6 @@ main #home div.welcome {
     top: 33.1em;
 }
 
-
 /* end the block div.welcome positioning 
 on top of block div.img-main-banner */
 
@@ -249,59 +232,169 @@ on top of block div.img-main-banner */
 
 /* start styling of the section #about-us elements */
 
-main #about-us {
-    padding-top: .55em;
+#about-us {
+    background-color: #ffe6ac;
+    padding: .85em;
 }
 
 /* end styling of the section #about-us elements */
 
 /* start styling of the section #services elements */
 
+#services {
+    margin-top: 2.15em;
+}
+
+#services h1 {
+    margin: 0 .85rem .6rem .85rem;
+}
+
+#services article.digital,
+#services article.marketing,
+#services article.video,
+#services article.web,
+#services article.print {
+    background-color: #ffe6ac;
+    margin: 0 .85em .85em .85em;
+}
+
+#services article h2 {
+    padding: 0 .85rem;
+    margin: .7em 0 .35em 0;
+}
+
+#services article p {
+    margin: 0;
+    padding: 0 .85rem;
+}
+
+#services article form {
+    padding: .85rem;
+}
+
+/* main #services article img { */
 
 
 /* end styling of the section #services elements */
 
 /* start styling of the section #vision elements */
 
+/* start the block div.vision positioning 
+on top of block div.vision */
 
+#vision div.img-vision {
+    position: relative;
+    background-color: transparent;
+    top: -11em;
+    left: 0;
+    z-index: -5;
+}
 
-/* end styling of the section #vision elements */
+#vision div.vision {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: .85em .85em .85em .85em;
+    z-index: -4;
+    position: absolute;
+    top: 315.5em;
+    color: #ffffff;
+}
 
-main #vision form button {
+/* end the block div.vision positioning 
+on top of block div.img-vision */
+
+#vision h2 {
+    margin-block-end: 0;
+}
+
+/* cropping (hidening under blocks .curtain-top and .curtain-bottom)
+ the top and bottom of the  the block .img-vision */
+
+#vision div.curtain-top {
+    padding: 3.1em;
+    z-index: -3;
+    background-color: #ffffff;
+    position: relative;
+    top: -5.5em;
+}
+
+#vision div.curtain-bottom {
+    padding: 3em;
+    z-index: -3;
+    background-color: #ffffff;
+    position: relative;
+    top: -17.1em;
+}
+
+/* define section #vision height property with value 300px */
+
+#vision {
+    height: 300px;
+}
+
+#vision form button {
     border: .0625em solid #c78c06;
 }
 
+/* end styling of the section #vision elements */
+
+
 /* start styling of the section #team elements */
 
-main #team p.par-teammate {
-    font-weight: bold;
+#team article.john,
+#team article.bob {
+    background-color: #ffe6ac;
+    margin: 0 .85em .85em .85em;
+    padding-bottom: .85em;
 }
 
-main hr {
+#team h1 {
+    margin: 2rem .85rem .85rem .85rem;
+}
+
+#team article h2 {
+    padding-left: .85rem;
+    margin-top: .2em;
+    margin-bottom: 0;
+}
+
+#team article hr {
+    margin: 0 .85em 0 .85em;
     border-color: #c78c06;
-    margin-bottom: 1em;
+}
+
+#team article p.par-teammate {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: .85em;
+}
+
+#team article p {
+    padding: 0 .85em;
 }
 
 /* end styling of the section #team elements */
 
 /* start styling of the section #contact elements */
 
-main #contact h2,
+#contact h2,
 caption {
     text-transform: none;
 }
 
-main #contact caption {
+#contact caption {
     text-align: left;
 }
 
 /* start styling of the article .message elements */
 
-main #contact .message div {
+#contact article.message div {
     display: grid;
 }
 
-main #contact .message form button {
+#contact article.message form button {
     padding: .35em;
     color: #c78c06;
 }
@@ -310,20 +403,19 @@ main #contact .message form button {
 
 /* start styling of the article .operation elements */
 
-main #contact .operation table,
-.operation td,
-.operation th {
+#contact article.operation table,
+#contact article.operation td,
+#contact article.operation th {
     border: .0625em solid black;
     padding: 0.3125em;
-    /* font-weight: inherit; */
 }
 
-main #contact .operation table th {
+#contact article.operation table th {
     background-color: #ffe6ac;
     font-weight: bold;
 }
 
-main #contact .operation table {
+#contact article.operation table {
     width: 100%;
 }
 
