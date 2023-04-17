@@ -67,7 +67,8 @@ header {
 }
 
 header .yellowbox {
-    /* background-color: #c78c06; */
+    /*the client requirement is background-color: #c78c06; 
+    color picked in Photoshop #c68d00 - change back before submission*/
     background-color: #c68d00;
     padding: 6.26em;
 }
