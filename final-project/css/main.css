@@ -1,5 +1,7 @@
 /* css code */
 
+/* ============================================================== */
+
 /* apply to all tags properties and values */
 
 * {
@@ -9,16 +11,9 @@
     line-height: 1.5;
 }
 
-/* define section #home header h1 properties and values*/
+/* =============================================================== */
 
-#home h1 {
-    font-size: 4em;
-    font-weight: 800;
-    margin-block-start: .55em;
-    margin-block-end: .3em;
-}
-
-/* define other sections header h1 properties and values*/
+/* define heading h1 properties and values*/
 
 h1 {
     font-size: 2.7em;
@@ -27,7 +22,7 @@ h1 {
     margin-block-end: .33em;
 }
 
-/* define header h2 and caption properties and values*/
+/* define heading h2 and caption properties and values*/
 
 h2,
 caption {
@@ -44,17 +39,21 @@ p {
     margin-block-end: .65em;
 }
 
+/* ========================================================== */
+
 /* define the maximum width of the container as 1200px:
 'max-width' property sets a maximum width of 1200px,
 'width: 100%' sets the content inside .wrapper  to fill the maximum 
 space of their container (1200px),
 'margin: 0 auto' centers .wrapper in the window for larger windows ( > 1200px) */
 
-body div.wrapper {
+.wrapper {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
+
+/* ========================================================== */
 
 /* start styling of the header elements */
 
@@ -66,27 +65,35 @@ header {
     padding: .85em;
 }
 
-header .yellowbox {
+/* style .yellowbox with background color #c78c06 and padding 6.26em*/
+
+.yellowbox {
     /*the client requirement is background-color: #c78c06; 
     color picked in Photoshop #c68d00 - change back before submission*/
+    background-color: #c78c06;
     background-color: #c68d00;
     padding: 6.26em;
 }
 
-header .logo {
+/* place the logo in upper-left corner of the .yellowbox */
+
+.logo {
     position: absolute;
     top: 2.2em;
 }
 
-header .navbar {
+/* style navigation bar */
+
+.navbar {
     position: absolute;
     bottom: 3.75em;
     left: 0;
     right: 0;
 }
 
-header nav.navbar ul.navlist li.navitem a,
-li.one a {
+/* style navigation bar links */
+
+a {
     display: block;
     text-align: center;
     text-transform: capitalize;
@@ -97,12 +104,17 @@ li.one a {
     font-size: 1.16em;
 }
 
-header nav.navbar ul.navlist li.one a {
+/* style the class .home-link link with text 
+color #222 and font-weight 500 */
+
+.home-link a {
     color: #222222;
     font-weight: 500;
 }
 
-header .search-submit #search {
+/* style the #search text input */
+
+#search {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -111,27 +123,38 @@ header .search-submit #search {
     padding: .32em .25em;
 }
 
-header .search-submit .btn-search-submit {
+/* style search submit button, 
+add style to the magnifying glass icon */
+
+.btn-search-submit {
     position: absolute;
     bottom: 0;
     right: 0;
     color: #c78c06;
-    padding: .375em .52em;
+    padding: .15em .52em;
     border: .056em solid #c78c06;
     margin-right: .85em;
     margin-bottom: .85em;
     background-color: transparent;
 }
 
-/* increase size of search icon to 1.3em */
+/* increase size of search icon to 1.3em and
+align button text and icon in one line */
 
-header .search-submit .btn-search-submit i.fa-solid {
+i.fa-solid {
+    line-height: inherit;
     font-size: 1.3em;
 }
 
 /* end styling of the 'header' elements */
 
+/* =========================================================== */
+
 /* start styling of the 'main' elements */
+
+/* ============================================================ */
+
+/* capitalize text of the h1, h2, label, and table elements */
 
 h1,
 h2,
@@ -140,21 +163,25 @@ table {
     text-transform: capitalize;
 }
 
+/* set width 100% and height auto to images of main */
+
 main img {
     width: 100%;
     height: auto;
 }
 
-/* applying background color to main elements */
+/* ============================================================ */
 
 /* start applying style to all buttons of 'main'*/
 
-#services form button,
-#home form button,
-#vision form button,
-#contact form button {
+/* add style to the butons of sections #home, "services", "vision", "contact" */
+
+#home button,
+#services button,
+#vision button,
+#contact button {
     display: flex;
-    padding: 1.45em;
+    padding: 1.23em;
     background-color: #222222;
     color: #fff;
     border: none;
@@ -162,76 +189,85 @@ main img {
     text-transform: capitalize;
 }
 
-#services form button .fa-play,
-#home form button .fa-play,
-#vision form button .fa-play {
+/* add padding-left '.8em' to the play button icon with class .fa-play */
+
+.fa-play {
     padding-left: .8em;
 }
 
-/* align button text and icon in one line */
+/* center buttons text vertically by setting 
+the values of margin-top and margin-bottom to 'auto' */
 
-form button i.fa-solid {
-    line-height: inherit;
+.btn-text {
+    margin: auto 0;
 }
 
 /* end applying style to all buttons of 'main'*/
 
+/* ================================================================= */
+
 /* start styling of the section #home elements */
 
-#home h1,
-#home p.par {
-    color: #fff;
-    text-transform: none;
+/* add background-image to div.wrapper with background-size
+'cover', bacground-position 'centered', add top and bottom padding
+3.9em and 3.8em respectively */
+
+.img-home-wrapper {
+    background-image: url('../images/main-banner.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 3.9em 0 3.8em 0;
+    background-position: center;
 }
 
-#home form button {
-    text-transform: none;
-    color: #000;
+/* create underlay for .welcome content
+with background-color #222 and opacity .65 */
+
+.underlay {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-color: hsla(0, 0%, 13%, 0.65);
+    padding: .85em;
+}
+
+/* define section #home header h1 properties and values;
+style header h1 with text color #fff, 
+with text-transform 'none', and margin-top .5em */
+
+#home h1 {
+    font-size: 4em;
+    font-weight: 800;
+    margin-block-start: .55em;
+    margin-block-end: .3em;
+    color: #fff;
+    text-transform: unset;
+    margin-top: .5em;
+}
+
+/* style paragraph with text color 'white' */
+
+#home p {
+    color: #fff;
+}
+
+/* style button with background-color #c78c06,
+style the button text with text-transform 'none' and text color #222222 */
+
+#home .btn-connect-submit {
+    text-transform: unset;
+    color: #222222;
     background-color: #c78c06;
 }
 
-/* create background layer for .welcome content
-with background-color #222 and opacity .99 */
-
-#home div.welcome::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: #22222299;
-    /* opacity: .99; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-/* start the block div.welcome positioning 
-on top of block div.img-main-banner */
-
-#home div.img-main-banner {
-    position: relative;
-    background-color: #ffe6ac;
-    top: 0;
-    left: 0;
-}
-
-#home div.welcome {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: .85em .85em .85em .85em;
-    z-index: 1;
-    position: absolute;
-    top: 33.1em;
-}
-
-/* end the block div.welcome positioning 
-on top of block div.img-main-banner */
-
-
 /* end styling of the section #home elements */
 
+/* ================================================================== */
+
 /* start styling of the section #about-us elements */
+
+/* style about-us section with bacground-color #ffe6ac and padding .85em */
 
 #about-us {
     background-color: #ffe6ac;
@@ -240,99 +276,79 @@ on top of block div.img-main-banner */
 
 /* end styling of the section #about-us elements */
 
+/* ================================================================= */
+
 /* start styling of the section #services elements */
 
-#services {
-    margin-top: 2.15em;
-}
+/* add margins to heading h1 of the section #services */
 
 #services h1 {
-    margin: 0 .85rem .6rem .85rem;
+    margin: 2.5rem .85rem .6rem .85rem;
 }
 
-#services article.digital,
-#services article.marketing,
-#services article.video,
-#services article.web,
-#services article.print {
+/* add background-color #ffe6ac and margins to articles of the section #services */
+
+.digital,
+.marketing,
+.video,
+.web,
+.print {
     background-color: #ffe6ac;
     margin: 0 .85em .85em .85em;
 }
 
-#services article h2 {
+/* add paddings and margins to heading h2 of the #services section raticles */
+
+#services h2 {
     padding: 0 .85rem;
     margin: .7em 0 .35em 0;
 }
 
-#services article p {
+/* add margin 0 and paddings to paragraphs p of the #services section articles */
+
+#services p {
     margin: 0;
     padding: 0 .85rem;
 }
 
-#services article form {
+/* add padding to phorm element of the #services section articles */
+
+#services form {
     padding: .85rem;
 }
 
-/* main #services article img { */
-
-
 /* end styling of the section #services elements */
+
+/* ============================================================ */
 
 /* start styling of the section #vision elements */
 
-/* start the block div.vision positioning 
-on top of block div.vision */
-
-#vision div.img-vision {
-    position: relative;
-    background-color: transparent;
-    top: -11em;
-    left: 0;
-    z-index: -5;
-}
-
-#vision div.vision {
-    max-width: 1200px;
+#vision  .vision .img-vision-wrapper {
+    background-image: url('../images/vision.jpg'); 
     width: 100%;
-    margin: 0 auto;
-    padding: .85em .85em .85em .85em;
-    z-index: -4;
-    position: absolute;
-    top: 315.5em;
-    color: #ffffff;
+    height: auto;
+    background-size: cover;
+    padding: 0 .85em .85em .85em;
+    background-position: center;
 }
 
-/* end the block div.vision positioning 
-on top of block div.img-vision */
+/* style heading h2 with text color 'white',
+unset margin0block-end, and add padding-top .85em*/
 
 #vision h2 {
-    margin-block-end: 0;
+    color: #fff;
+    margin-block-end: unset;
+    padding-top: .85em;
 }
 
-/* cropping (hidening under blocks .curtain-top and .curtain-bottom)
- the top and bottom of the  the block .img-vision */
+/* style paragraph with text color 'white */
 
-#vision div.curtain-top {
-    padding: 3.1em;
-    z-index: -3;
-    background-color: #ffffff;
-    position: relative;
-    top: -5.5em;
+#vision p {
+    color: #fff;
 }
 
-#vision div.curtain-bottom {
-    padding: 3em;
-    z-index: -3;
-    background-color: #ffffff;
-    position: relative;
-    top: -17.1em;
-}
-
-/* define section #vision height property with value 300px */
-
-#vision {
-    height: 300px;
-}
+/* style vision form button border:
+border-width .0625em, solid, color #c78c06*/
 
 #vision form button {
     border: .0625em solid #c78c06;
@@ -340,11 +356,12 @@ on top of block div.img-vision */
 
 /* end styling of the section #vision elements */
 
+/* =========================================================== */
 
 /* start styling of the section #team elements */
 
-#team article.john,
-#team article.bob {
+.john,
+.bob {
     background-color: #ffe6ac;
     margin: 0 .85em .85em .85em;
     padding-bottom: .85em;
@@ -354,25 +371,25 @@ on top of block div.img-vision */
     margin: 2rem .85rem .85rem .85rem;
 }
 
-#team article h2 {
+#team h2 {
     padding-left: .85rem;
     margin-top: .2em;
     margin-bottom: 0;
 }
 
-#team article hr {
+hr {
     margin: 0 .85em 0 .85em;
     border-color: #c78c06;
 }
 
-#team article p.par-teammate {
+.par-teammate {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: .85em;
 }
 
-#team article p {
+#team p {
     padding: 0 .85em;
 }
 
@@ -444,10 +461,21 @@ footer {
     padding: 2.5em 0em .5em 1em;
 }
 
-footer a,
+/* style the paragrahp with text color #c78c06 */
+
 footer p {
     color: #c78c06;
-    margin-bottom: 1em;
+}
+
+/* style link with text-decoration 'underline'
+and font-size .85em */
+
+footer a {
+    display: inline;
+    text-align: unset;
+    text-decoration: underline;
+    padding: unset;
+    font-size: .85em;
 }
 
 /* end styling of the 'footer' elements */

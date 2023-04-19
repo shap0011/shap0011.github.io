@@ -27,15 +27,15 @@
             <div class="yellowbox"></div>
             <!-- use the image tag to add image 'logo.png' -->
             <img class="logo" src="images/logo.png" alt="logo">
-            <!-- add a navigation bar with class 'navbar' with a list with class 'navlist' of five items with class 'navitem' with links  'home', 'about us', 'services', 'team', and 'connect' -->
+            <!-- add a navigation bar with class 'navbar' with a list of five items with links  'home', 'about us', 'services', 'team', and 'connect' -->
             <nav class="navbar">
-                <ul class="navlist">
+                <ul>
                     <!-- add class 'one' to the first item -->
-                    <li class="navitem one"><a href="#home">home</a></li>
-                    <li class="navitem"><a href="#about-us">about us</a></li>
-                    <li class="navitem"><a href="#services">services</a></li>
-                    <li class="navitem"><a href="#team">team</a></li>
-                    <li class="navitem"><a href="#contact">contact</a></li>
+                    <li class="home-link"><a href="#home">home</a></li>
+                    <li><a href="#about-us">about us</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <!-- create a form with method 'get' and class 'search-submit' -->
@@ -52,30 +52,32 @@
         <main>
             <!-- add a section with id 'home' -->
             <section id="home">
-                <!-- use the image tag to add image 'main-banner.png' -->
-                <div class="img-main-banner">
-                    <img src="images/main-banner.jpg" alt="main banner">
-                </div>
                 <!-- create a block with class 'welcome' -->
                 <div class="welcome">
-                    <!-- add heading h1 -->
-                    <h1>Welcome to Three Star Media</h1>
-                    <!-- add a paragraph with class 'par' -->
-                    <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt soluta.
-                        Sunt
-                        suscipit fuga,
-                        illo et voluptate excepturi, saepe magni numquam optio rem dolore. Corrupti eveniet
-                        obcaecati
-                        nisi
-                        modi beatae.</p>
-                    <!-- create a form with class 'connect-submit' and with method 'get' -->
-                    <form class="connect-submit" action="#" method="get">
-                        <!-- add a button (submit type) with class 'btn-connect-submit' using 'play' icon -->
-                        <button type="submit" class="btn-connect-submit">
-                            Connect with us
-                            <i class="fa-sharp fa-solid fa-play"></i>
-                        </button>
-                    </form>
+                    <!-- create a block with class 'img-wrapper' for image-background -->
+                    <div class="img-home-wrapper">
+                        <!-- create a block with class 'underlay' for class 'welcome' content underlay -->
+                        <div class="underlay">
+                            <!-- add heading h1 -->
+                            <h1>Welcome to Three Star Media</h1>
+                            <!-- add a paragraph with class 'par' -->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt soluta.
+                                Sunt
+                                suscipit fuga,
+                                illo et voluptate excepturi, saepe magni numquam optio rem dolore. Corrupti eveniet
+                                obcaecati
+                                nisi
+                                modi beatae.</p>
+                            <!-- create a form with class 'connect-submit' and with method 'get' -->
+                            <form class="connect-submit" action="#" method="get">
+                                <!-- add a button (submit type) with class 'btn-connect-submit' using 'play' icon -->
+                                <button type="submit" class="btn-connect-submit">
+                                    <span class="btn-text">Connect with us</span>
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- add a section with id 'about-us' -->
@@ -111,7 +113,7 @@
                     <form class="digital-submit" action="#" method="get">
                         <!-- add a button (submit type) with class 'btn-digital-submit' using 'play' icon -->
                         <button type="submit" class="btn-digital-submit">
-                            digital plans
+                            <span class="btn-text">digital plans</span>
                             <i class="fa-sharp fa-solid fa-play"></i>
                         </button>
                     </form>
@@ -131,7 +133,7 @@
                     <form class="marketing-submit" action="#" method="get">
                         <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-marketing-submit">
-                            marketing plans
+                            <span class="btn-text">marketing plans</span>
                             <i class="fa-sharp fa-solid fa-play"></i>
                         </button>
                     </form>
@@ -151,7 +153,7 @@
                     <form class="video-submit" action="#" method="get">
                         <!-- add a button (submit type) using 'play' icon -->
                         <button type="submit" class="btn-video-submit">
-                            video plans
+                            <span class="btn-text">video plans</span>
                             <i class="fa-sharp fa-solid fa-play"></i>
                         </button>
                     </form>
@@ -171,7 +173,7 @@
                     <form class="web-submit" action="#" method="get">
                         <!-- add a button (submit type) with class 'btn-web-submit' using 'play' icon -->
                         <button type="submit" class="btn-web-submit">
-                            web plans
+                            <span class="btn-text">web plans</span>
                             <i class="fa-sharp fa-solid fa-play"></i>
                         </button>
                     </form>
@@ -191,7 +193,7 @@
                     <form class="print-submit" action="#" method="get">
                         <!-- add a button (submit type) with class 'btn-print-submit' using 'play' icon -->
                         <button type="submit" class="btn-print-submit">
-                            print plans
+                            <span class="btn-text">print plans</span>
                             <i class="fa-sharp fa-solid fa-play"></i>
                         </button>
                     </form>
@@ -199,27 +201,25 @@
             </section>
             <!-- add a section with id 'vision' -->
             <section id="vision">
-                <!-- use the image tag to add image 'vision.png' -->
-                <div class="curtain-top"></div>
-                <div class="img-vision">
-                    <img src="images/vision.jpg" alt="vision">
-                </div>
-                <div class="curtain-bottom"></div>
                 <div class="vision">
-                    <!-- add heading h2 -->
-                    <h2>our vision</h2>
-                    <!-- add a paragraph -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis delectus quae
-                        dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
-                        obcaecati nam a repellat aperiam!</p>
-                    <!-- create a form with class 'print-submit' with method 'get' -->
-                    <form class="print-submit" action="#" method="get">
-                        <!-- add a button (submit type) with class 'btn-vision-submit' using 'play' icon -->
-                        <button type="submit" class="btn-vision-submit">
-                            learn more
-                            <i class="fa-sharp fa-solid fa-play"></i>
-                        </button>
-                    </form>
+                    <div class="img-vision-wrapper">
+                        <!-- add heading h2 -->
+                        <h2>our vision</h2>
+                        <!-- add a paragraph -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita odit nobis
+                            delectus
+                            quae
+                            dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
+                            obcaecati nam a repellat aperiam!</p>
+                        <!-- create a form with class 'print-submit' with method 'get' -->
+                        <form class="print-submit" action="#" method="get">
+                            <!-- add a button (submit type) with class 'btn-vision-submit' using 'play' icon -->
+                            <button type="submit" class="btn-vision-submit">
+                                <span class="btn-text">learn more</span>
+                                <i class="fa-sharp fa-solid fa-play"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </section>
             <!-- add a section with id 'team' -->
