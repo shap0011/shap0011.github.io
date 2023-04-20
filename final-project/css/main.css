@@ -617,7 +617,7 @@ footer a {
     set 'height' property of the <header> element to 'auto' */
 
     header {
-        /* position: unset; */
+        position: unset;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -659,10 +659,10 @@ footer a {
         padding: unset;
     }
 
-    /* add style to links */
+    /* set paddings to links */
 
     a {
-        padding: 0 1.3em;
+        padding: 0 0 0 2.4em;
     }
 
     /* style the class .home-link link with text 
@@ -670,7 +670,7 @@ footer a {
 
     .home-link a {
         background-color: #c78c06;
-        padding: .85em;
+        padding: .85em 1.5em;
     }
 
     /* style the #search text input */
