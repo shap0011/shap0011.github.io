@@ -34,7 +34,10 @@ caption {
 
 /* define paragraph p, label, th, td font-size with value .85em */
 
-p, label, th, td {
+p,
+label,
+th,
+td {
     font-size: .85em;
 }
 
@@ -72,6 +75,10 @@ space of their container (1200px),
 
 /* start styling of the header elements */
 
+/* style header with background-color #222222, width 'auto', 
+height 32.95em, and padding .85em, set header 'position' 
+property to value 'relative' */
+
 header {
     position: relative;
     background-color: #222222;
@@ -86,7 +93,7 @@ header {
     /*the client requirement is background-color: #c78c06; 
     color picked in Photoshop #c68d00 - change back before submission*/
     background-color: #c78c06;
-    background-color: #c68d00;
+    /* background-color: #c68d00; */
     padding: 6.26em;
 }
 
@@ -95,6 +102,7 @@ header {
 .logo {
     position: absolute;
     top: 2.2em;
+    cursor: pointer;
 }
 
 /* style navigation bar */
@@ -106,17 +114,22 @@ header {
     right: 0;
 }
 
-/* style navigation bar links */
+/* style navigation bar list-items */
 
-a {
+.navbar li {
     display: block;
     text-align: center;
     text-transform: capitalize;
-    text-decoration: none;
     padding: 1.15em;
-    color: #c78c06;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.16em;
+}
+
+/* add style to links */
+
+a {
+    color: #c78c06;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* style the class .home-link link with text 
@@ -479,8 +492,8 @@ and set it to the value 1.2em,
 add padding and set it to .55em*/
 
 #message {
-    margin-bottom: 1.2em; 
-    padding: .55em;  
+    margin-bottom: 1.2em;
+    padding: .55em;
 }
 
 /* style button 'Send' with padding top and bottom 0, 
@@ -588,3 +601,103 @@ footer a {
 }
 
 /* end styling of the 'footer' elements */
+
+/* ===================================================================== */
+
+/* add a min-width media query for the screen size of 760px and above */
+
+@media screen and (min-width: 760px) {
+
+    /* start styling of the header elements */
+    
+    /* for horizontal header add 'display' property and set it to 'flex' value, 
+    add 'justify-content' property and set it to 'space-between' value, 
+    add 'align-items' property and set it to 'center' value 
+    to center the alignments for all the items in the flexible <header> element,
+    set 'height' property of the <header> element to 'auto' */
+
+    header {
+        /* position: unset; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 2em 6em;
+    }
+
+    /* hide block .yellowbox */
+
+    .yellowbox {
+        display: none;
+    }
+
+    /* unset values position and top for image with class 'logo' */
+
+    .logo {
+        position: unset;
+        top: unset;
+    }
+
+    /* unset mobile style for navigation bar */
+
+    .navbar {
+        position: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+    }
+
+    /* style navigation bar list-items,
+    unset mobile style of 'text-align' and 'font-size' properties 
+    for navigation bar list items,
+    to display list items horizontally add 'display' property 
+    and set it to 'inline-block' value */
+
+    .navbar li {
+        display: inline-block;
+        text-align: unset;
+        padding: unset;
+    }
+
+    /* add style to links */
+
+    a {
+        padding: 0 1.3em;
+    }
+
+    /* style the class .home-link link with text 
+    color #222 and font-weight 500 */
+
+    .home-link a {
+        background-color: #c78c06;
+        padding: .85em;
+    }
+
+    /* style the #search text input */
+
+    #search {
+        position: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        margin: unset;
+    }
+
+    /* style search submit button, 
+add style to the magnifying glass icon */
+
+    .btn-search-submit {
+        position: unset;
+        bottom: unset;
+        right: unset;
+        margin-right: unset;
+        margin-bottom: unset;
+    }
+
+    /* end styling of the 'header' elements */
+
+    /* main,
+    footer {
+        display: none;
+    } */
+}
