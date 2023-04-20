@@ -19,11 +19,11 @@
 </head>
 
 <body>
-    <!-- create a block with class 'wrapper' -->
-    <div class="wrapper">
-        <!-- add a header -->
-        <header>
-            <!-- use the div tag with class 'yellowbox' to add a block for yellow rectangular -->
+    <!-- add a header -->
+    <header>
+        <!-- create a block with class 'wrapper' -->
+        <div class="wrapper">
+            <!-- use the <div> tag with class 'yellowbox' to add a block for yellow rectangular -->
             <div class="yellowbox"></div>
             <!-- use the image tag to add image 'logo.png' -->
             <img class="logo" src="images/logo.png" alt="logo" title="logo">
@@ -31,8 +31,8 @@
             <nav>
                 <ul class="navbar">
                     <!-- add class 'one' to the first item -->
-                    <li class="home-link"><a href="#home">home</a></li>
-                    <li><a href="#about-us">about us</a></li>
+                    <li class="home-list-item"><a href="#home">home</a></li>
+                    <li><a class="about-link" href="#about-us">about us</a></li>
                     <li><a href="#services">services</a></li>
                     <li><a href="#team">team</a></li>
                     <li><a href="#contact">contact</a></li>
@@ -47,13 +47,16 @@
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
-        </header>
-        <!-- create a main with content in it -->
-        <main>
-            <!-- add a section with id 'home' -->
-            <section id="home">
-                <!-- create a block with class 'img-home-wrapper' for image-background -->
-                <div class="img-home-wrapper">
+        </div>
+    </header>
+    <!-- create a main with content in it -->
+    <main>
+        <!-- add a section with id 'home' -->
+        <section id="home">
+            <!-- create a block with class 'img-home-wrapper' for image-background -->
+            <div class="img-home-wrapper">
+                <!-- create a block with class 'wrapper' -->
+                <div class="wrapper">
                     <!-- create a block with class 'underlay' for class 'welcome' content underlay -->
                     <div class="underlay">
                         <!-- add heading h1 -->
@@ -76,23 +79,33 @@
                         </form>
                     </div>
                 </div>
-            </section>
-            <!-- add a section with id 'about-us' -->
-            <section id="about-us">
-                <!-- use the image tag to add image 'about-us.png' -->
-                <img src="images/about-us.jpg" alt="about us">
-                <!-- add heading h1 -->
-                <h1>about us</h1>
-                <!-- add two paragraphs -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur eos dolor quis beatae earum
-                    neque enim sapiente quae amet, ratione iste provident cumque illum molestiae. Perspiciatis a ex
-                    vitae?</p>
-                <p>Itaque ipsam rerum dolorum voluptas beatae autem reprehenderit tenetur molestias earum distinctio
-                    fugiat, non minus expedita eveniet nobis cumque a aliquam libero necessitatibus eligendi dignissimos
-                    nulla. Ab voluptate ad provident!</p>
-            </section>
-            <!-- add a section with id 'services' -->
-            <section id="services">
+            </div>
+        </section>
+        <!-- add a section with id 'about-us' -->
+        <section id="about-us">
+            <!-- create a block with class 'wrapper' -->
+            <div class="wrapper">
+                <div class="about-us-image">
+                    <!-- use the image tag to add image 'about-us.png' -->
+                    <img src="images/about-us.jpg" alt="about us">
+                </div>
+                <div class="about-us-text">
+                    <!-- add heading h1 -->
+                    <h1>about us</h1>
+                    <!-- add two paragraphs -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur eos dolor quis beatae earum
+                        neque enim sapiente quae amet, ratione iste provident cumque illum molestiae. Perspiciatis a ex
+                        vitae?</p>
+                    <p>Itaque ipsam rerum dolorum voluptas beatae autem reprehenderit tenetur molestias earum distinctio
+                        fugiat, non minus expedita eveniet nobis cumque a aliquam libero necessitatibus eligendi dignissimos
+                        nulla. Ab voluptate ad provident!</p>
+                </div>
+            </div>
+        </section>
+        <!-- add a section with id 'services' -->
+        <section id="services">
+            <!-- create a block with class 'wrapper' -->
+            <div class="wrapper">
                 <!-- add heading h1 -->
                 <h1>our services</h1>
                 <!-- create an article with class 'digital' with content in it -->
@@ -195,11 +208,14 @@
                         </button>
                     </form>
                 </article>
-            </section>
-            <!-- add a section with id 'vision' -->
-            <section id="vision">
-                <!-- create a block with class 'img-vision-wrapper' for image-background -->
-                <div class="img-vision-wrapper">
+            </div>
+        </section>
+        <!-- add a section with id 'vision' -->
+        <section id="vision">
+            <!-- create a block with class 'img-vision-wrapper' for image-background -->
+            <div class="img-vision-wrapper">
+                <!-- create a block with class 'wrapper' -->
+                <div class="wrapper">
                     <!-- add heading h2 -->
                     <h2>our vision</h2>
                     <!-- add a paragraph -->
@@ -217,9 +233,12 @@
                         </button>
                     </form>
                 </div>
-            </section>
-            <!-- add a section with id 'team' -->
-            <section id="team">
+            </div>
+        </section>
+        <!-- add a section with id 'team' -->
+        <section id="team">
+            <!-- create a block with class 'wrapper' -->
+            <div class="wrapper">
                 <!-- add heading h1 -->
                 <h1>our team</h1>
                 <!-- create an article with class 'john' with content in it -->
@@ -254,9 +273,12 @@
                         dignissimos error quos, impedit quis blanditiis ducimus praesentium exercitationem libero et
                         obcaecati nam a repellat aperiam!</p>
                 </article>
-            </section>
-            <!-- add a section with id 'contact' -->
-            <section id="contact">
+            </div>
+        </section>
+        <!-- add a section with id 'contact' -->
+        <section id="contact">
+            <!-- create a block with class 'wrapper' -->
+            <div class="wrapper">
                 <!-- add heading h1 -->
                 <h1>contact us</h1>
                 <!-- create an article with class 'message' with content in it -->
@@ -315,24 +337,25 @@
                     <!-- add heading h2 -->
                     <h2>Location</h2>
                     <!-- embed an Algonquin College google map -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5607
-                        .893343085008!2d-75.75874547404013!3d45.3498887602379!3m2!1i1024!2i768!4f13
-                        .1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College
-                        %20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1681955200707!5m2!1sen!2sca"
-                        allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5607
+                            .893343085008!2d-75.75874547404013!3d45.3498887602379!3m2!1i1024!2i768!4f13
+                            .1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College
+                            %20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1681955200707!5m2!1sen!2sca" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </article>
-            </section>
-        </main>
-        <!-- add a footer -->
-        <footer>
+            </div>
+        </section>
+    </main>
+    <!-- add a footer -->
+    <footer>
+        <!-- create a block with class 'wrapper' -->
+        <div class="wrapper">
             <!-- add paragraph with copyright -->
             <p class="par-copy">&copy; Copyright Three Star Media, 2020</p>
             <!-- add paragraph with link with target attribute 'blank' to be opened in a new blank window -->
             <p>All images are taken from <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -135,8 +135,8 @@ a {
 /* style the class .home-link link with text 
 color #222 and font-weight 500 */
 
-.home-link a {
-    color: #222222;
+.home-list-item a {
+    color: #000;
     font-weight: 500;
 }
 
@@ -285,7 +285,7 @@ style the button text with text-transform 'none' and text color #222222 */
 
 #home .btn-connect-submit {
     text-transform: unset;
-    color: #222222;
+    color: #000;
     background-color: #c78c06;
 }
 
@@ -609,20 +609,27 @@ footer a {
 @media screen and (min-width: 760px) {
 
     /* start styling of the header elements */
-    
-    /* for horizontal header add 'display' property and set it to 'flex' value, 
-    add 'justify-content' property and set it to 'space-between' value, 
-    add 'align-items' property and set it to 'center' value 
-    to center the alignments for all the items in the flexible <header> element,
+
+    /* unset mobile layout 'position' and 'padding' properties' values,
     set 'height' property of the <header> element to 'auto' */
 
     header {
         position: unset;
+        height: auto;
+        padding: unset;
+    }
+
+    /* for horizontal header add 'display' property and set it to 'flex' value, 
+    add 'justify-content' property and set it to 'space-between' value, 
+    add 'align-items' property and set it to 'center' value 
+    to center the alignments for all the items in the flexible div.wrapper element  */
+
+    header div.wrapper {
+        /* max-width: unset; */
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: auto;
-        padding: 2em 6em;
+        padding: 2em 0;
     }
 
     /* hide block .yellowbox */
@@ -631,7 +638,7 @@ footer a {
         display: none;
     }
 
-    /* unset values position and top for image with class 'logo' */
+    /* unset mobile layout values for position and top for image with class 'logo' */
 
     .logo {
         position: unset;
@@ -662,18 +669,26 @@ footer a {
     /* set paddings to links */
 
     a {
-        padding: 0 0 0 2.4em;
+        padding: 0 0 0 5em;
     }
 
-    /* style the class .home-link link with text 
-    color #222 and font-weight 500 */
+    /* set paddings to links */
 
-    .home-link a {
+    .about-link {
+        padding: 0 0 0 2.5em;
+    }
+
+    /* style the class .home-list-item link with 
+    background color #c78c86, padding-top and padding-bottom .85,
+    padding-left and padding-right 2em*/
+
+    .home-list-item a {
         background-color: #c78c06;
-        padding: .85em 1.5em;
+        padding: .85em 2em;
     }
 
-    /* style the #search text input */
+    /* unset the #search text input mobile layout properties' valies 
+    'position', 'bottom', 'left', 'right', 'margin ' values for mobile layout */
 
     #search {
         position: unset;
@@ -684,7 +699,8 @@ footer a {
     }
 
     /* style search submit button, 
-add style to the magnifying glass icon */
+    add style to the magnifying glass icon,
+    unset mobole layout 'position', 'bottom', 'right' properties values  */
 
     .btn-search-submit {
         position: unset;
@@ -692,9 +708,58 @@ add style to the magnifying glass icon */
         right: unset;
         margin-right: unset;
         margin-bottom: unset;
+        padding: .15em .52em;
+        padding: 0 0;
+        padding: 0 .52em;
+        padding-top: .0325em;
+        padding-bottom: .23em;
     }
 
     /* end styling of the 'header' elements */
+
+    /* ================================================================== */
+
+    /* no need styling of the section #home elements for desktop layout */
+
+    /* ================================================================== */
+
+    /* start styling of the section #about-us elements */
+ 
+    /* set 'display' property of the block with class .wrapper to 'flex',
+    and 'aligh-items' property to value 'center' */
+
+    #about-us div.wrapper {
+        display: flex;
+        align-items: center;
+    }
+ 
+    /* use 'flex-basis' property with value setted to 100% 
+    to get the same width for all flex items */
+
+    #about-us div.wrapper > * {
+        /* flex: 1; */
+        flex-basis: 100%;
+    }
+
+    /* add 'padding-right' property to the image with class .about-us-image,
+    and set its value to .425em */
+
+    .about-us-image {
+        padding-right: .425em;
+    }
+
+    /* add 'padding-left' property to the <div> element with class .about-us-image,
+    and set its value to .425em */
+
+    .about-us-text {
+        padding-left: .425em;
+    }
+
+    /* end styling of the section #about-us elements */
+
+    /* ================================================================= */
+
+    
 
     /* main,
     footer {
