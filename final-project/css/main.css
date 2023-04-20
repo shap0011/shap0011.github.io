@@ -32,11 +32,26 @@ caption {
     margin-block-end: .83em;
 }
 
-/* define paragraph p properties and values */
+/* define paragraph p, label, th, td font-size with value .85em */
+
+p, label, th, td {
+    font-size: .85em;
+}
+
+/* define paragraph p margin-block-start and margin-block-end 
+properties and values */
+
 p {
-    font-size: 0.85em;
     margin-block-start: 1em;
     margin-block-end: .65em;
+}
+
+/* define label margin-block-start and margin-block-end 
+properties and values */
+
+label {
+    margin-block-start: .45em;
+    margin-block-end: .25em;
 }
 
 /* ========================================================== */
@@ -280,13 +295,20 @@ style the button text with text-transform 'none' and text color #222222 */
 
 /* start styling of the section #services elements */
 
+/* add padding .85em to section #services */
+
+#services {
+    padding: .85em;
+}
+
 /* add margins to heading h1 of the section #services */
 
 #services h1 {
-    margin: 2.5rem .85rem .6rem .85rem;
+    margin: 1.5rem 0 .6rem 0;
 }
 
-/* add background-color #ffe6ac and margins to articles of the section #services */
+/* add background-color #ffe6ac and margin-bottom .85 
+to articles of the section #services */
 
 .digital,
 .marketing,
@@ -294,24 +316,31 @@ style the button text with text-transform 'none' and text color #222222 */
 .web,
 .print {
     background-color: #ffe6ac;
-    margin: 0 .85em .85em .85em;
+    margin-bottom: .85em;
 }
 
-/* add paddings and margins to heading h2 of the #services section raticles */
+/* add left and right paddings with value .85em
+to heading h2 and paragraph p of the #services section raticles */
+
+#services h2,
+#services p {
+    padding: 0 .85rem;
+}
+
+/* add margins to heading h2 of the #services section raticles */
 
 #services h2 {
-    padding: 0 .85rem;
     margin: .7em 0 .35em 0;
 }
 
-/* add margin 0 and paddings to paragraphs p of the #services section articles */
+/* unset margins 
+of the #services section articles paragraphs */
 
 #services p {
-    margin: 0;
-    padding: 0 .85rem;
+    margin: unset;
 }
 
-/* add padding to phorm element of the #services section articles */
+/* add padding to form element of the #services section articles */
 
 #services form {
     padding: .85rem;
@@ -323,8 +352,8 @@ style the button text with text-transform 'none' and text color #222222 */
 
 /* start styling of the section #vision elements */
 
-#vision  .vision .img-vision-wrapper {
-    background-image: url('../images/vision.jpg'); 
+#vision .img-vision-wrapper {
+    background-image: url('../images/vision.jpg');
     width: 100%;
     height: auto;
     background-size: cover;
@@ -360,34 +389,52 @@ border-width .0625em, solid, color #c78c06*/
 
 /* start styling of the section #team elements */
 
+/* add padding .85 to section #team */
+
+#team {
+    padding: .85em;
+}
+
+/* style articles of classes .john and .bob 
+with adding the background-color #ffe6ac, margins, 
+and padding-bottom .85em */
+
 .john,
 .bob {
     background-color: #ffe6ac;
-    margin: 0 .85em .85em .85em;
+    margin-bottom: .85em;
     padding-bottom: .85em;
 }
 
-#team h1 {
-    margin: 2rem .85rem .85rem .85rem;
-}
+/* style heading h2 of #team section with adding padding-left .85em, 
+margin-top .2em, margin-bottom und unset */
 
 #team h2 {
     padding-left: .85rem;
     margin-top: .2em;
-    margin-bottom: 0;
+    margin-bottom: unset;
 }
 
+/* style horizontal rule with border-color #c78c06, 
+add margin-left .85 and margin-right .85 */
+
 hr {
-    margin: 0 .85em 0 .85em;
+    margin: 0 .85em;
     border-color: #c78c06;
 }
 
+/* style paragraphs with class .par-teammate by 
+adding font-weight 'bold', padding-left .85em,
+and margin 'unset' */
+
 .par-teammate {
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: unset;
     padding-left: .85em;
 }
+
+/* style section #team paragraphs with adding left 
+and right paddingswith value .85em */
 
 #team p {
     padding: 0 .85em;
@@ -395,15 +442,20 @@ hr {
 
 /* end styling of the section #team elements */
 
+/* ================================================================ */
+
 /* start styling of the section #contact elements */
 
-#contact h2,
-caption {
-    text-transform: none;
+/* add padding .85 to section #team */
+
+#contact {
+    padding: .85em;
 }
 
-#contact caption {
-    text-align: left;
+/* add margin-top .45 to heading h1  */
+
+#contact h1 {
+    margin-top: .45em;
 }
 
 /* start styling of the article .message elements */
@@ -412,8 +464,30 @@ caption {
     display: grid;
 }
 
-#contact article.message form button {
-    padding: .35em;
+/* unset 
+margin-block-start, margin-block-end, 
+and text-transform for heading h2 of #contact section */
+
+#contact h2 {
+    margin-block-start: unset;
+    margin-block-end: unset;
+    text-transform: unset;
+}
+
+/* add margin-bottom to the textarea with class .message 
+and set it to the value 1.2em,
+add padding and set it to .55em*/
+
+#message {
+    margin-bottom: 1.2em; 
+    padding: .55em;  
+}
+
+/* style button 'Send' with padding top and bottom 0, 
+padding left and right .35em, and text color #c78c06*/
+
+#contact .btn-contact-submit {
+    padding: 0 .35em;
     color: #c78c06;
 }
 
@@ -421,30 +495,56 @@ caption {
 
 /* start styling of the article .operation elements */
 
-#contact article.operation table,
-#contact article.operation td,
-#contact article.operation th {
-    border: .0625em solid black;
-    padding: 0.3125em;
-}
+/* set table width to 100% */
 
-#contact article.operation table th {
-    background-color: #ffe6ac;
-    font-weight: bold;
-}
-
-#contact article.operation table {
+table {
     width: 100%;
+}
+
+/* set text-align 'left' to the table caption and unset text=transfom */
+
+caption {
+    text-align: left;
+    text-transform: initial;
+    margin-left: 0;
+    margin-top: .5em;
+    margin-bottom: .15em;
+}
+
+/* add style to table, header cell, and to data cell */
+
+table,
+td,
+th {
+    border: .0625em solid black;
+    padding: 0.9em;
+}
+
+/* add background-color #ffe6ac to table header */
+
+table th {
+    background-color: #ffe6ac;
 }
 
 /* end styling of the article .operation elements */
 
 /* start styling of the article .location elements */
 
+/* add padding to top and bottom of the h2 element */
+
+.location h2 {
+    padding-top: .45em;
+    padding-bottom: .15em;
+}
+
+/* style iframe element with border property setting to 0, 
+width 100%, and height 470px */
+
 iframe {
     border: 0;
+    /* width: 600px; */
     width: 100%;
-    height: 200px;
+    height: 470px;
 }
 
 /* end styling of the article .location elements */
@@ -453,18 +553,27 @@ iframe {
 
 /* end styling of the main elements */
 
+/* ================================================================= */
 
 /* start styling of the 'footer' elements */
 
 footer {
     background-color: #222222;
-    padding: 2.5em 0em .5em 1em;
+    padding: 1.65em 0em .45em 1em;
 }
 
-/* style the paragrahp with text color #c78c06 */
+/* style the paragrahp with text color #c78c06, font-size .9em,
+and font-family 'Open Sans', sans-serif */
 
 footer p {
     color: #c78c06;
+    font-size: .9em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* add margins to top and bottom of the paragraph with class .par-copy */
+.par-copy {
+    margin: .6em 0 1.4em 0;
 }
 
 /* style link with text-decoration 'underline'
@@ -475,7 +584,7 @@ footer a {
     text-align: unset;
     text-decoration: underline;
     padding: unset;
-    font-size: .85em;
+    font-size: 1em;
 }
 
 /* end styling of the 'footer' elements */
