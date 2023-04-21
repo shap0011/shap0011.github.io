@@ -90,10 +90,7 @@ header {
 /* style .yellowbox with background color #c78c06 and padding 6.26em*/
 
 .yellowbox {
-    /*the client requirement is background-color: #c78c06; 
-    color picked in Photoshop #c68d00 - change back before submission*/
     background-color: #c78c06;
-    /* background-color: #c68d00; */
     padding: 6.26em;
 }
 
@@ -473,7 +470,7 @@ and right paddingswith value .85em */
 
 /* start styling of the article .message elements */
 
-#contact article.message div {
+#contact .message div {
     display: grid;
 }
 
@@ -506,7 +503,7 @@ padding left and right .35em, and text color #c78c06*/
 
 /* end styling of the article .message elements */
 
-/* start styling of the article .operation elements */
+/* start styling of the block <div> with class .operation elements */
 
 /* set table width to 100% */
 
@@ -539,7 +536,7 @@ table th {
     background-color: #ffe6ac;
 }
 
-/* end styling of the article .operation elements */
+/* end styling of the block <div> with class .operation elements */
 
 /* start styling of the article .location elements */
 
@@ -911,8 +908,6 @@ footer a {
     the values of margin-left and margin-right to 'auto' */
 
     .btn-text {
-        /* margin: auto 0; */
-        /* margin: unset; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -997,7 +992,7 @@ footer a {
      and grid-area properties: 
      'm' for article with class .message,
      'l' for article with class .location,
-     'o' for article with class .operation,
+     'o' for the block with tag <div> with class .operation,
       to create a grid with 2 columns and 2 rows that matches the mock-up layout. */
 
     #contact .grid-wrapper {
@@ -1028,7 +1023,7 @@ footer a {
     
     /* use grid-area property to assign the name 'o' 
     to a grid item (the article with class .operation),
-    add 'padding-right' property to the article with class .operation,
+    add 'padding-right' property to the block with tag <div> with class .operation,
     and set its value to .425em,
     add 'height' property and set its valie to 'fit-content' */
 
