@@ -624,12 +624,12 @@ footer a {
     add 'align-items' property and set it to 'center' value 
     to center the alignments for all the items in the flexible div.wrapper element  */
 
-    header div.wrapper {
+    header .wrapper {
         /* max-width: unset; */
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2em 0;
+        padding: 2em .85em;
     }
 
     /* hide block .yellowbox */
@@ -669,22 +669,22 @@ footer a {
     /* set paddings to links */
 
     a {
-        padding: 0 0 0 5em;
+        padding: 0 0 0 4em;
     }
 
     /* set paddings to links */
 
     .about-link {
-        padding: 0 0 0 2.5em;
+        padding: 0 0 0 2em;
     }
 
     /* style the class .home-list-item link with 
-    background color #c78c86, padding-top and padding-bottom .85,
-    padding-left and padding-right 2em*/
+    background color #c78c86, padding-top and padding-bottom 1em,
+    padding-left and padding-right 2.5em*/
 
     .home-list-item a {
         background-color: #c78c06;
-        padding: .85em 2em;
+        padding: 1em 2.5em;
     }
 
     /* unset the #search text input mobile layout properties' valies 
@@ -719,25 +719,33 @@ footer a {
 
     /* ================================================================== */
 
-    /* no need styling of the section #home elements for desktop layout */
+    /* start styling of the section #home elements */
+
+    /* set new values to the property 'padding' of the <div> element with class .img-home-wrapper */
+
+    .img-home-wrapper {
+        padding: 2.6em 0 2.5em 0;
+    }
+
+    /* end styling of the 'header' elements */
 
     /* ================================================================== */
 
     /* start styling of the section #about-us elements */
- 
+
     /* set 'display' property of the block with class .wrapper to 'flex',
     and 'aligh-items' property to value 'center' */
 
-    #about-us div.wrapper {
+    #about-us .wrapper {
         display: flex;
         align-items: center;
+        padding: 0 .85em;
     }
- 
+
     /* use 'flex-basis' property with value setted to 100% 
     to get the same width for all flex items */
 
-    #about-us div.wrapper > * {
-        /* flex: 1; */
+    #about-us .wrapper>* {
         flex-basis: 100%;
     }
 
@@ -759,10 +767,304 @@ footer a {
 
     /* ================================================================= */
 
-    
+    /* start styling of the section #services elements */
 
-    /* main,
-    footer {
-        display: none;
-    } */
+    /* add padding .85em to section #services */
+
+    #services .wrapper {
+        padding: 0 .85em;
+    }
+
+    /* use the 'display' property setted to 'grid' value, 
+    'grid-template-columns' property to create 6 columns, 
+    'grid-template-rows' property to create 2 rows, 
+    'grid-template-areas' property to specify areas within the grid layout, 
+     and grid-area properties: 
+     'd' for article with class .digital,
+     'm' for article with class .marketing,
+     'v' for article with class .video,
+     'w' for article with class .web,
+     'p' for article with class .print,
+      to create a grid with 6 columns and 2 rows that matches the mock-up layout. 
+      add 'aspect-ratio' property and set it to '1 / 1' value 
+      to fit div.grid-wrapper content*/
+
+    #services .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "d d d m m m"
+            "v v w w p p";
+        aspect-ratio: 1 / 1;
+    }
+
+    /* use 'grid-area' property to assign the name 'd' 
+    to a grid item (the article with class .digital),
+    add 'margin-right' property to the article with class .digital,
+    and set its value to .425em,
+    add 'width' property and set its valie to 'fit-content' */
+
+    .digital:nth-child(1) {
+        grid-area: d;
+        margin-right: .425em;
+        width: fit-content;
+    }
+
+    /* use grid-area property to assign the name 'm' 
+    to a grid item (the article with class .marketing),
+    add 'padding-left' property to the article with class .marketing,
+    and set its value to .425em,
+    add 'width' property and set its valie to 'fit-content' */
+
+    .marketing:nth-child(2) {
+        grid-area: m;
+        margin-left: .425em;
+        width: fit-content;
+    }
+
+    /* use grid-area property to assign the name 'v' 
+    to a grid item (the article with class .video),
+    add 'padding-right' property to the article with class .video,
+    and set its value to .425em,
+    add 'height' property and set its valie to 'fit-content' */
+
+    /* #services .wrapper .video:nth-child(3) { */
+    .video:nth-child(3) {
+        grid-area: v;
+        margin-right: .425em;
+        height: fit-content;
+    }
+
+    /* use grid-area property to assign the name 'w' 
+    to a grid item (the article with class .web),
+    add 'padding-left' and 'padding-right' properties to the article with class .web,
+    and set their values to .425em,
+    add 'height' property and set its valie to 'fit-content' */
+
+    /* #services .wrapper .web:nth-child(4) { */
+    .web:nth-child(4) {
+        grid-area: w;
+        margin-left: .425em;
+        margin-right: .425em;
+        height: fit-content;
+    }
+
+    /* use grid-area property to assign the name 'p' 
+    to a grid item (the article with class .marketing),
+    add 'padding-left' property to the article with class .print,
+    and set its value to .425em,
+    add 'height' property and set its valie to 'fit-content' */
+
+    /* #services .wrapper .print:nth-child(5) { */
+    .print:nth-child(5) {
+        grid-area: p;
+        margin-left: .425em;
+        height: fit-content;
+    }
+
+    /* to equalize the heights of articles with classes .video, .web, 
+    .print set their height properties to the images height average 253.07px */
+
+    .video img,
+    .web img,
+    .print img {
+        height: 253.07px;
+    }
+
+    /* to equalize the widths of articles with classes .video, .web, 
+    .print with widths of their images, set their width properties 
+    to the images width average 379.62px*/
+
+    .video,
+    .web,
+    .print {
+        width: 379.62px;
+        margin-bottom: 0;
+    }
+
+    /* to equalize the heights of articles with classes .digital, .marketing, 
+    set their height properties to the images height average 384.705px */
+
+    .digital img,
+    .marketing img {
+        height: 384.705px;
+    }
+
+    /* to equalize the widths of articles with classes .digital, .marketing with 
+    widths of their images,
+    set their width properties to the images width average 577.07px*/
+
+    .digital,
+    .marketing {
+        width: 577.07px;
+    }
+
+    /* add desktop layout style to #services section buttons with 'width' property
+    and value 100% */
+
+    #services button {
+        width: 100%;
+    }
+
+    /* center buttons text horizontally by setting 
+    the values of margin-left and margin-right to 'auto' */
+
+    .btn-text {
+        /* margin: auto 0; */
+        /* margin: unset; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* end styling of the section #services elements */
+
+    /* ============================================================ */
+
+    /* start styling of the section #vision elements */
+
+    /* add padding .85em to section #vision */
+
+    #vision .wrapper {
+        padding: 0 .85em;
+    }
+
+    /* end styling of the section #vision elements */
+
+    /* ============================================================ */
+
+    /* start styling of the section #team elements */
+
+    /* add padding .85em to section #team */
+
+    #team .wrapper {
+        padding: 0 .85em;
+    }
+
+    /* set the 'display' property of the block with class .flexbox-wrapper 
+    of the article with class 'john' to value 'flex' */
+
+    #team .john .flexbox-wrapper {
+        display: flex;
+    }
+
+    /* set the 'display' property of the block with class .flexbox-wrapper 
+    of the article with class 'bob' to value 'flex',
+    add 'flex-direction' property and set it to 'row-reverse' value */
+
+    #team .bob .flexbox-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    /* use 'flex-basis' property with value setted to 100% 
+    to get the same width for all flex items */
+
+    #team .flexbox-wrapper>* {
+        flex-basis: 100%;
+    }
+
+    /* unset values of the 'margin-bottom' and 'padding-bottom' 
+    properties used for mobile layout */
+
+    .john,
+    .bob {
+        margin-bottom: unset;
+        padding-bottom: unset;
+    }
+
+    /* set images 'height' property to value 100%*/
+    #team img {
+        height: 100%;
+    }
+
+    /* end styling of the section #team elements */
+
+    /* ============================================================ */
+
+    /* start styling of the section #contact elements */
+
+    /* add padding .85em to section #contact */
+
+    #contact .wrapper {
+        padding: 0 .85em;
+    }
+
+    /* use the 'display' property setted to 'grid' value, 
+    'grid-template-columns' property to create 2 columns, 
+    'grid-template-rows' property to create 7 rows, 
+    'grid-template-areas' property to specify areas within the grid layout, 
+     and grid-area properties: 
+     'm' for article with class .message,
+     'l' for article with class .location,
+     'o' for article with class .operation,
+      to create a grid with 2 columns and 2 rows that matches the mock-up layout. */
+
+    #contact .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas:
+            "m l"
+            "m l"
+            "m l"
+            "m l"
+            "m l"
+            "o o"
+            "o o";
+    }
+
+    /* use 'grid-area' property to assign the name 'm' 
+    to a grid item (the article with class .message),
+    add 'margin-right' property to the article with class .message,
+    and set its value to .425em,
+    add 'height' property and set its valie to 'fit-content' */
+
+    .message:nth-child(1) {
+        grid-area: m;
+        margin-right: .425em;
+    }
+
+    
+    /* use grid-area property to assign the name 'o' 
+    to a grid item (the article with class .operation),
+    add 'padding-right' property to the article with class .operation,
+    and set its value to .425em,
+    add 'height' property and set its valie to 'fit-content' */
+
+    .operation:nth-child(2) {
+        grid-area: o;
+    }
+
+    /* use grid-area property to assign the name 'l' 
+    to a grid item (the article with class .location),
+    add 'padding-left' property to the article with class .location,
+    and set its value to .425em,
+    add 'height' property and set its valie to 'fit-content' */
+
+    .location:nth-child(3) {
+        grid-area: l;
+        margin-left: .425em;
+    }
+
+
+    /* end styling of the section #contact elements */
+
+    /* ============================================================ */
+
+    /* start styling of the section #footer elements */
+
+    
+    /* add padding .55em to footer */
+
+    footer .wrapper {
+        padding-left: .55em;
+    }
+
+    /* end styling of the section #footer elements */
+
+    /* ============================================================ */
+
+
+
 }
