@@ -2,7 +2,7 @@
 
 /* ============================================================== */
 
-/* apply to all tags properties and values */
+/* apply properties and values to all tags  */
 
 * {
     box-sizing: border-box;
@@ -32,7 +32,7 @@ caption {
     margin-block-end: .83em;
 }
 
-/* define paragraph p, label, th, td font-size with value .85em */
+/* define paragraph p, label, th, td 'font-size' with value .85em */
 
 p,
 label,
@@ -41,7 +41,7 @@ td {
     font-size: .85em;
 }
 
-/* define paragraph p margin-block-start and margin-block-end 
+/* define paragraph p 'margin-block-start' and 'margin-block-end' 
 properties and values */
 
 p {
@@ -49,7 +49,7 @@ p {
     margin-block-end: .65em;
 }
 
-/* define label margin-block-start and margin-block-end 
+/* define label 'margin-block-start' and 'margin-block-end' 
 properties and values */
 
 label {
@@ -129,7 +129,7 @@ a {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* style the class .home-link link with text 
+/* style the class .home-list-item link with text 
 color #222 and font-weight 500 */
 
 .home-list-item a {
@@ -221,7 +221,7 @@ main img {
 }
 
 /* center buttons text vertically by setting 
-the values of margin-top and margin-bottom to 'auto' */
+the values of 'margin-top' and 'margin-bottom' to 'auto' */
 
 .btn-text {
     margin: auto 0;
@@ -234,7 +234,7 @@ the values of margin-top and margin-bottom to 'auto' */
 /* start styling of the section #home elements */
 
 /* add background-image to div.wrapper with background-size
-'cover', bacground-position 'centered', add top and bottom padding
+'cover', bacground-position 'centered', add top and bottom paddings
 3.9em and 3.8em respectively */
 
 .img-home-wrapper {
@@ -247,7 +247,7 @@ the values of margin-top and margin-bottom to 'auto' */
 }
 
 /* create underlay for .welcome content
-with background-color #222 and opacity .65 */
+with 'background-color' #222 and opacity .65 */
 
 .underlay {
     width: 100%;
@@ -259,7 +259,7 @@ with background-color #222 and opacity .65 */
 
 /* define section #home header h1 properties and values;
 style header h1 with text color #fff, 
-with text-transform 'none', and margin-top .5em */
+with 'text-transform' 'none', and 'margin-top' .5em */
 
 #home h1 {
     font-size: 4em;
@@ -277,8 +277,8 @@ with text-transform 'none', and margin-top .5em */
     color: #fff;
 }
 
-/* style button with background-color #c78c06,
-style the button text with text-transform 'none' and text color #222222 */
+/* style button with 'background-color' #c78c06,
+style the button text with 'text-transform' 'none' and text color #222222 */
 
 #home .btn-connect-submit {
     text-transform: unset;
@@ -292,7 +292,7 @@ style the button text with text-transform 'none' and text color #222222 */
 
 /* start styling of the section #about-us elements */
 
-/* style about-us section with bacground-color #ffe6ac and padding .85em */
+/* style about-us section with 'bacground-color' #ffe6ac and padding .85em */
 
 #about-us {
     background-color: #ffe6ac;
@@ -317,7 +317,7 @@ style the button text with text-transform 'none' and text color #222222 */
     margin: 1.5rem 0 .6rem 0;
 }
 
-/* add background-color #ffe6ac and margin-bottom .85 
+/* add 'background-color' #ffe6ac and 'margin-bottom' .85 
 to articles of the section #services */
 
 .digital,
@@ -330,14 +330,14 @@ to articles of the section #services */
 }
 
 /* add left and right paddings with value .85em
-to heading h2 and paragraph p of the #services section raticles */
+to heading h2 and paragraph p of the #services section articles */
 
 #services h2,
 #services p {
     padding: 0 .85rem;
 }
 
-/* add margins to heading h2 of the #services section raticles */
+/* add margins to heading h2 of the #services section articles */
 
 #services h2 {
     margin: .7em 0 .35em 0;
@@ -372,7 +372,7 @@ of the #services section articles paragraphs */
 }
 
 /* style heading h2 with text color 'white',
-unset margin0block-end, and add padding-top .85em*/
+unset 'margin0block-end' property value, and add 'padding-top' .85em*/
 
 #vision h2 {
     color: #fff;
@@ -406,8 +406,8 @@ border-width .0625em, solid, color #c78c06*/
 }
 
 /* style articles of classes .john and .bob 
-with adding the background-color #ffe6ac, margins, 
-and padding-bottom .85em */
+with adding the 'background-color' #ffe6ac, margins, 
+and 'padding-bottom' .85em */
 
 .john,
 .bob {
@@ -416,8 +416,8 @@ and padding-bottom .85em */
     padding-bottom: .85em;
 }
 
-/* style heading h2 of #team section with adding padding-left .85em, 
-margin-top .2em, margin-bottom und unset */
+/* style heading h2 of #team section with adding 'padding-left' .85em, 
+'margin-top' .2em, 'margin-bottom' und unset */
 
 #team h2 {
     padding-left: .85rem;
@@ -425,8 +425,8 @@ margin-top .2em, margin-bottom und unset */
     margin-bottom: unset;
 }
 
-/* style horizontal rule with border-color #c78c06, 
-add margin-left .85 and margin-right .85 */
+/* style horizontal rule with 'border-color' #c78c06, 
+add 'margin-left' .85 and 'margin-right' .85 */
 
 hr {
     margin: 0 .85em;
@@ -434,8 +434,8 @@ hr {
 }
 
 /* style paragraphs with class .par-teammate by 
-adding font-weight 'bold', padding-left .85em,
-and margin 'unset' */
+adding 'font-weight' 'bold', 'padding-left' .85em,
+and 'margin' 'unset' */
 
 .par-teammate {
     font-weight: bold;
@@ -444,7 +444,7 @@ and margin 'unset' */
 }
 
 /* style section #team paragraphs with adding left 
-and right paddingswith value .85em */
+and right paddings with value .85em */
 
 #team p {
     padding: 0 .85em;
@@ -456,13 +456,13 @@ and right paddingswith value .85em */
 
 /* start styling of the section #contact elements */
 
-/* add padding .85 to section #team */
+/* add 'padding' .85 to section #team */
 
 #contact {
     padding: .85em;
 }
 
-/* add margin-top .45 to heading h1  */
+/* add 'margin-top' .45 to heading h1  */
 
 #contact h1 {
     margin-top: .45em;
@@ -475,8 +475,8 @@ and right paddingswith value .85em */
 }
 
 /* unset 
-margin-block-start, margin-block-end, 
-and text-transform for heading h2 of #contact section */
+'margin-block-start', 'margin-block-end', 
+and 'text-transform' for heading h2 of #contact section */
 
 #contact h2 {
     margin-block-start: unset;
@@ -484,9 +484,9 @@ and text-transform for heading h2 of #contact section */
     text-transform: unset;
 }
 
-/* add margin-bottom to the textarea with class .message 
+/* add 'margin-bottom' to the <textarea> with class .message 
 and set it to the value 1.2em,
-add padding and set it to .55em*/
+add 'padding' and set it to .55em*/
 
 #message {
     margin-bottom: 1.2em;
@@ -511,7 +511,7 @@ table {
     width: 100%;
 }
 
-/* set text-align 'left' to the table caption and unset text=transfom */
+/* set 'text-align' 'left' to the table <caption> and unset 'text-transform' */
 
 caption {
     text-align: left;
@@ -530,7 +530,7 @@ th {
     padding: 0.9em;
 }
 
-/* add background-color #ffe6ac to table header */
+/* add 'background-color' #ffe6ac to table header */
 
 table th {
     background-color: #ffe6ac;
@@ -547,12 +547,11 @@ table th {
     padding-bottom: .15em;
 }
 
-/* style iframe element with border property setting to 0, 
-width 100%, and height 470px */
+/* style <iframe> element with border property setting to 0, 
+'width' 100%, and 'height' 470px */
 
 iframe {
     border: 0;
-    /* width: 600px; */
     width: 100%;
     height: 470px;
 }
@@ -565,15 +564,15 @@ iframe {
 
 /* ================================================================= */
 
-/* start styling of the 'footer' elements */
+/* start styling of the <footer> elements */
 
 footer {
     background-color: #222222;
     padding: 1.65em 0em .45em 1em;
 }
 
-/* style the paragrahp with text color #c78c06, font-size .9em,
-and font-family 'Open Sans', sans-serif */
+/* style the paragraph with text color #c78c06, 'font-size' .9em,
+and 'font-family' 'Open Sans', sans-serif */
 
 footer p {
     color: #c78c06;
@@ -587,7 +586,7 @@ footer p {
 }
 
 /* style link with text-decoration 'underline'
-and font-size .85em */
+and 'font-size' .85em */
 
 footer a {
     display: inline;
@@ -622,7 +621,6 @@ footer a {
     to center the alignments for all the items in the flexible div.wrapper element  */
 
     header .wrapper {
-        /* max-width: unset; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -676,8 +674,8 @@ footer a {
     }
 
     /* style the class .home-list-item link with 
-    background color #c78c86, padding-top and padding-bottom 1em,
-    padding-left and padding-right 2.5em*/
+    'background-color' #c78c86, 'padding-top' and 'padding-bottom' 1em,
+    'padding-left' and 'padding-right' 2.5em*/
 
     .home-list-item a {
         background-color: #c78c06;
@@ -772,7 +770,7 @@ footer a {
         padding: 0 .85em;
     }
 
-    /* use the 'display' property setted to 'grid' value, 
+    /* use the 'display' property set to 'grid' value, 
     'grid-template-columns' property to create 6 columns, 
     'grid-template-rows' property to create 2 rows, 
     'grid-template-areas' property to specify areas within the grid layout, 
@@ -800,7 +798,7 @@ footer a {
     to a grid item (the article with class .digital),
     add 'margin-right' property to the article with class .digital,
     and set its value to .425em,
-    add 'width' property and set its valie to 'fit-content' */
+    add 'width' property and set its value to 'fit-content' */
 
     .digital:nth-child(1) {
         grid-area: d;
@@ -812,7 +810,7 @@ footer a {
     to a grid item (the article with class .marketing),
     add 'padding-left' property to the article with class .marketing,
     and set its value to .425em,
-    add 'width' property and set its valie to 'fit-content' */
+    add 'width' property and set its value to 'fit-content' */
 
     .marketing:nth-child(2) {
         grid-area: m;
@@ -824,9 +822,8 @@ footer a {
     to a grid item (the article with class .video),
     add 'padding-right' property to the article with class .video,
     and set its value to .425em,
-    add 'height' property and set its valie to 'fit-content' */
+    add 'height' property and set its value to 'fit-content' */
 
-    /* #services .wrapper .video:nth-child(3) { */
     .video:nth-child(3) {
         grid-area: v;
         margin-right: .425em;
@@ -837,9 +834,8 @@ footer a {
     to a grid item (the article with class .web),
     add 'padding-left' and 'padding-right' properties to the article with class .web,
     and set their values to .425em,
-    add 'height' property and set its valie to 'fit-content' */
+    add 'height' property and set its value to 'fit-content' */
 
-    /* #services .wrapper .web:nth-child(4) { */
     .web:nth-child(4) {
         grid-area: w;
         margin-left: .425em;
@@ -851,9 +847,8 @@ footer a {
     to a grid item (the article with class .marketing),
     add 'padding-left' property to the article with class .print,
     and set its value to .425em,
-    add 'height' property and set its valie to 'fit-content' */
+    add 'height' property and set its value to 'fit-content' */
 
-    /* #services .wrapper .print:nth-child(5) { */
     .print:nth-child(5) {
         grid-area: p;
         margin-left: .425em;
@@ -861,7 +856,7 @@ footer a {
     }
 
     /* to equalize the heights of articles with classes .video, .web, 
-    .print set their height properties to the images height average 253.07px */
+    .print set their 'height' properties to the images height average 253.07px */
 
     .video img,
     .web img,
@@ -870,7 +865,7 @@ footer a {
     }
 
     /* to equalize the widths of articles with classes .video, .web, 
-    .print with widths of their images, set their width properties 
+    .print with widths of their images, set their 'width' properties 
     to the images width average 379.62px*/
 
     .video,
@@ -881,7 +876,7 @@ footer a {
     }
 
     /* to equalize the heights of articles with classes .digital, .marketing, 
-    set their height properties to the images height average 384.705px */
+    set their 'height' properties to the images height average 384.705px */
 
     .digital img,
     .marketing img {
@@ -890,7 +885,7 @@ footer a {
 
     /* to equalize the widths of articles with classes .digital, .marketing with 
     widths of their images,
-    set their width properties to the images width average 577.07px*/
+    set their 'width' properties to the images width average 577.07px */
 
     .digital,
     .marketing {
@@ -905,7 +900,7 @@ footer a {
     }
 
     /* center buttons text horizontally by setting 
-    the values of margin-left and margin-right to 'auto' */
+    the values of 'margin-left' and 'margin-right' to 'auto' */
 
     .btn-text {
         margin-left: auto;
@@ -918,7 +913,7 @@ footer a {
 
     /* start styling of the section #vision elements */
 
-    /* add padding .85em to section #vision */
+    /* add 'padding' .85em to section #vision */
 
     #vision .wrapper {
         padding: 0 .85em;
@@ -930,7 +925,7 @@ footer a {
 
     /* start styling of the section #team elements */
 
-    /* add padding .85em to section #team */
+    /* add 'padding' .85em to section #team */
 
     #team .wrapper {
         padding: 0 .85em;
@@ -952,7 +947,7 @@ footer a {
         flex-direction: row-reverse;
     }
 
-    /* use 'flex-basis' property with value setted to 100% 
+    /* use 'flex-basis' property with value set to 100% 
     to get the same width for all flex items */
 
     #team .flexbox-wrapper>* {
@@ -979,13 +974,13 @@ footer a {
 
     /* start styling of the section #contact elements */
 
-    /* add padding .85em to section #contact */
+    /* add 'padding' .85em to section #contact */
 
     #contact .wrapper {
         padding: 0 .85em;
     }
 
-    /* use the 'display' property setted to 'grid' value, 
+    /* use the 'display' property set to 'grid' value, 
     'grid-template-columns' property to create 2 columns, 
     'grid-template-rows' property to create 7 rows, 
     'grid-template-areas' property to specify areas within the grid layout, 
@@ -993,7 +988,7 @@ footer a {
      'm' for article with class .message,
      'l' for article with class .location,
      'o' for the block with tag <div> with class .operation,
-      to create a grid with 2 columns and 2 rows that matches the mock-up layout. */
+      to create a grid with 2 columns and 7 rows that matches the mock-up layout. */
 
     #contact .grid-wrapper {
         display: grid;
@@ -1012,20 +1007,18 @@ footer a {
     /* use 'grid-area' property to assign the name 'm' 
     to a grid item (the article with class .message),
     add 'margin-right' property to the article with class .message,
-    and set its value to .425em,
-    add 'height' property and set its valie to 'fit-content' */
+    and set its value to .425em */
 
     .message:nth-child(1) {
         grid-area: m;
         margin-right: .425em;
     }
 
-    
+
     /* use grid-area property to assign the name 'o' 
     to a grid item (the article with class .operation),
     add 'padding-right' property to the block with tag <div> with class .operation,
-    and set its value to .425em,
-    add 'height' property and set its valie to 'fit-content' */
+    and set its value to .425em */
 
     .operation:nth-child(2) {
         grid-area: o;
@@ -1034,8 +1027,7 @@ footer a {
     /* use grid-area property to assign the name 'l' 
     to a grid item (the article with class .location),
     add 'padding-left' property to the article with class .location,
-    and set its value to .425em,
-    add 'height' property and set its valie to 'fit-content' */
+    and set its value to .425em */
 
     .location:nth-child(3) {
         grid-area: l;
@@ -1049,7 +1041,7 @@ footer a {
 
     /* start styling of the section #footer elements */
 
-    
+
     /* add padding .55em to footer */
 
     footer .wrapper {
