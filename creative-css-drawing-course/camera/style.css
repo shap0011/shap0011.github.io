@@ -1,8 +1,18 @@
-body {
+/* body { */
+.wrapper {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
+}
+
+.about {
+    text-align: end;
+}
+
+.text {
+    line-height: 2;
 }
 
 .camera {
@@ -15,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .lens {
@@ -58,11 +69,85 @@ body {
 }
 
 .button {
-   position: absolute; 
-   width: 30px;
-   height: 5px;
-   background-color: #009587;
-   border-radius: 60px;
-   left: 16px;
-   top: -5px;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: #009587;
+    border-radius: 60px;
+    left: 16px;
+    top: -5px;
+}
+
+
+/* ******************************************** */
+
+.diamond {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    margin: 0 150px;
+}
+
+
+span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid #20bc7d;
+    border-bottom: 50px solid #26c893;
+    border-left: 50px solid transparent;
+}
+
+span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #1fb67c;
+    border-right: 50px solid #20bc7d;
+    border-bottom: 50px solid #26c893;
+    border-left: 50px solid #55ddb9;
+}
+
+span:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #1fb67c;
+    border-right: 50px solid #20bc7d;
+    border-bottom: 50px solid #26c893;
+    border-left: 50px solid #55ddb9;
+}
+
+span:nth-child(4) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #1fb67c;
+    border-right: 50px solid #20bc7d;
+    border-bottom: 50px solid #26c893;
+    border-left: 50px solid #55ddb9;
+}
+
+/* *********************** */
+
+.graphics {
+    display: flex;
+}
+
+.graphics p {
+    text-align: center;
+}
+
+.camera-container {
+    margin-left: 100px;
 }
