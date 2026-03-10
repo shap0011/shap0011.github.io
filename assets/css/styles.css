@@ -37,3 +37,58 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.badge i {
+  /* margin-right: 6px;
+  font-size: 1rem;
+  vertical-align: -1px; */
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.filter-btn.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.badge {
+  /* transition: transform 0.15s ease; */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  border-radius: 999px;
+}
+
+.badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.tech-strip {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 16px;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.tech-strip i {
+  opacity: 0.9;
+  transition: transform 0.15s ease;
+  font-size: 1.25rem;
+  line-height: 1;
+  width: 22px;
+  text-align: center;
+}
+
+.tech-strip i:hover {
+  transform: scale(1.2);
+}
