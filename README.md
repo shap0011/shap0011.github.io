@@ -13,8 +13,8 @@ I am a **Cloud Development & Operations student** with a background in **Busines
 
 I build solutions that combine:
 
-📊 **Data analysis & visualization**
-☁️ **Cloud-based workflows**
+📊 **Data analysis & visualization** \
+☁️ **Cloud-based workflows** \
 🌐 **Modern web applications**
 
 My focus is on creating **practical, user-friendly tools** that automate processes, improve decision-making, and deliver real value.
@@ -72,16 +72,16 @@ This portfolio showcases selected academic and personal projects across:
 
 Here are some of the key projects included in this portfolio:
 
-🔹 **Dataset Cleaning Web App (Flask)**
-Automates preprocessing steps to streamline data preparation
-🔹 **Machine Learning Portfolio (Python)**
-Predictive models using real-world datasets (Linear Regression, Random Forest)
-🔹 **Power BI Dashboards**
-Interactive dashboards analyzing trends and business metrics
-🔹 **Cloud & DevOps Coursework**
-Hands-on work with modern cloud concepts and architectures
-🔹 **WordPress Enterprise Website Redesign**
-Focus on usability, structure, and user experience
+🔹 **Dataset Cleaning Web App (Flask)** \
+Automates preprocessing steps to streamline data preparation \
+🔹 **Machine Learning Portfolio (Python)** \
+Predictive models using real-world datasets (Linear Regression, Random Forest) \
+🔹 **Power BI Dashboards** \
+Interactive dashboards analyzing trends and business metrics \
+🔹 **Cloud & DevOps Coursework** \
+Hands-on work with modern cloud concepts and architectures \
+🔹 **WordPress Enterprise Website Redesign** \
+Focus on usability, structure, and user experience \
 
 👉 Each project includes descriptions, tools used, and links to code or live demos.
 
