@@ -81,7 +81,7 @@ Interactive dashboards analyzing trends and business metrics \
 🔹 **Cloud & DevOps Coursework** \
 Hands-on work with modern cloud concepts and architectures \
 🔹 **WordPress Enterprise Website Redesign** \
-Focus on usability, structure, and user experience \
+Focus on usability, structure, and user experience
 
 👉 Each project includes descriptions, tools used, and links to code or live demos.
 
